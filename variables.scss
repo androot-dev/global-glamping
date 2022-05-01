@@ -1,0 +1,41 @@
+$primary: #223588;
+$primary-2: #293FA1;
+$primary-3: #2E48BB;
+$secondary: #FF9900;
+$hero-height: 60vw;
+$min-height-hero: 690px;
+$p-color: #707070;
+$shadow-1: 0px 4px 0px rgba(0, 0, 0, 0.21);
+$section-separation: 60px;
+$lateral-separation: 40px;
+$title-font-size: 1.5rem;
+$p-size: 1rem;
+$title-margin-bottom: 80px;
+
+@mixin subtitle($color: $p-color, $size: $p-size){
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: $primary;
+    @include phones(){
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    @content;
+
+}
+    
+
+@mixin parrafo(){
+    font-family: "Allerta";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    @include phones {
+        font-size: 16px;
+        text-align: center;
+    }
+    color: #6d6868;
+    @content; 
+}

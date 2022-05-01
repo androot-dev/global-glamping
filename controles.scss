@@ -1,0 +1,333 @@
+@import "_basic.scss";
+@import "variables.scss";
+
+.action-btn{
+    text-decoration: none;
+    background: $secondary;
+    width: 222px;
+    height: 47px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.21) !important;
+    border-radius: 15px;
+    height: 47px;
+    font-family: 'Allerta' !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color:white !important;
+    border: none;
+    pointer-events: all;
+    transition:transform .2s ease-in-out;
+    margin:10px 0;
+    cursor: pointer;
+    @include flex(center);
+    &:hover{
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+    a{
+        color: white;
+        &:hover{
+            text-decoration: none;
+
+        }
+    }
+}
+.nav-dots{
+    max-height: 250px;
+    width: 25px;
+    height: 70%;
+    position:relative;
+    @include flex(space-between, wrap,column, center);
+    .vertical-line{
+        width: 1px;
+        height: 100%;
+        background: #e6e6e6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        left: calc(50% - 1px);
+        @include flex(space-between, wrap,row, space-between);
+  
+    }
+  
+    .circle{
+        background: rgb(180, 180, 180);
+        width: 20px;
+        height: 20px;
+        justify-content: space-between;
+        align-items: space-between;
+        border-radius: 50%;
+        z-index: 5;
+        transition: all 0.2s ease-in-out;
+    }
+    .selected-circle{
+        transform: scale(1.3);
+        background-color: $primary;
+    }
+    
+}
+.owl-item{
+    padding: 20px;
+    pointer-events: all !important;
+    min-width: 170px;
+ }
+.title-section{
+        background: $primary;
+        font-family: "Rubik";
+        background: #223588;
+        height: 70px;
+        max-width: 480px;
+        width: 55%;
+        z-index: 6;
+        margin-bottom: $title-margin-bottom;
+        @include tablets{
+            width: 80%;
+            padding: 15px; 
+        }
+        @include phones{
+            width: 90%;
+        }
+        color:white;
+        @include flex(center);
+        position: relative;
+        
+        h1{
+            margin-bottom: -2px;
+            text-align: center;
+            font-size: $title-font-size;
+        }
+        >div{
+            position: absolute;
+            bottom: -25%;
+            width: 80%;
+            height: 3px !important;
+            border-radius: 10px;
+            background: #3F9EF5;
+        }
+}
+.title-section-left{
+    border-radius: 0 50px 50px 0;
+    > div{
+        left: 0;
+    }
+}
+.title-section-right{
+    border-radius: 50px 0 0 50px;
+    right: 0;
+    > div{
+        right: 0;
+    }
+}
+.overlay-to-white{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(164, 164, 164, 0.691458) 53.44%, #FFFFFF 91.46%);
+}
+.overlay{
+    position: relative;
+}
+.overlay::before{
+    content: '';
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.geodesic{
+  background-image: url("assets/DOMOS BLANCO.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 350px;
+  min-height: 350px;
+
+  @include phones{
+      width: 120px !important;
+      height: 120px !important;
+  }
+
+  opacity: 0.4;
+}
+
+.layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.background-section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index:1;
+  *{
+     position: absolute;
+  }
+}
+.content-section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.logo-top{
+    background-image: url("assets/LOGO.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    @include phones{
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+.nav-menu-fixed{
+    margin:0 !important;
+    width: 100vw !important;
+    background: $primary !important;
+    position: fixed !important;
+    top:40px !important;
+
+    height: 40px !important;
+
+}
+.topheader-fixed{
+    background-color: #FFFFFF !important;
+    h3{
+        color: $primary !important;
+    }
+    z-index: 100 !important;
+    
+
+}
+
+.video-background{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        max-height: $hero-height;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(-50%);
+        filter: brightness(61%) contrast(84%);
+        object-fit: cover;
+        z-index: -1;
+      
+}
+
+.hover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:200px;
+    height: 45px;
+    background-color: #223588;
+    border-radius: 99px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+  }
+  .hover:before, .hover:after {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+  }
+  .hover:before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #223588;
+  }
+  .hover:after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #1e2d6e;
+  }
+  .hover:hover {
+    background-color: #2e3e88;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .hover:hover span {
+    opacity: 0;
+    z-index: -3;
+  }
+  .hover:hover:before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+  }
+  .hover:hover:after {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+  .hover span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    font-family: "Allerta";
+    font-size: 1rem;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+  }
+  .hover .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .hover .social-link i {
+    text-shadow: 1px 1px rgba(70, 98, 127, 0.7);
+    transform: scale(1);
+  }
+  .hover .social-link:hover {
+    background-color: rgba(245, 245, 245, 0.1);
+  }
+  .hover .social-link:hover i {
+    animation: bounce 0.4s linear;
+  }
+  
+  @keyframes bounce {
+    40% {
+      transform: scale(1.4);
+    }
+    60% {
+      transform: scale(0.8);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
