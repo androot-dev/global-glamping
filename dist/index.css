@@ -243,7 +243,7 @@
 }
 
 .topheader-fixed {
-  background-color: #FFFFFF !important;
+  background-color: #e7e7e7 !important;
   z-index: 100 !important;
 }
 .topheader-fixed h3 {
@@ -433,7 +433,7 @@ html {
 }
 @media (max-width: 576px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 
@@ -612,6 +612,9 @@ header {
 }
 .best-sellers .best-sellers-carousel-1 .owl-stage-outer {
   height: 340px;
+}
+.best-sellers .best-sellers-carousel-1 .active {
+  padding: 0 !important;
 }
 .best-sellers .best-sellers-carousel-1::-webkit-scrollbar {
   width: 2 !important;
@@ -917,12 +920,19 @@ li a:hover {
 }
 @media (max-width: 576px) {
   .aboutUs .img-square {
-    width: 60%;
-    height: 310px;
-    min-width: 220px;
-    min-height: 280px;
-    right: -35%;
+    width: 45%;
+    height: 320px;
+    min-width: 235px;
+    min-height: 260px;
+    right: -40%;
     border-radius: 52px;
+  }
+}
+@media (max-width: 405px) {
+  .aboutUs .img-square {
+    min-width: 205px;
+    min-height: 240px;
+    right: -25%;
   }
 }
 
@@ -972,7 +982,7 @@ li a:hover {
   font-weight: 400;
   font-size: 2.8rem;
   color: #223588;
-  margin: 35px 15px;
+  padding: 5px 15px;
   text-align: left;
   width: 50%;
 }
@@ -1023,8 +1033,14 @@ li a:hover {
   right: 0;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+.mysidebar .logo-sidebar {
+  margin-top: 20px;
+}
 .mysidebar .closeMenu {
   align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .mysidebar ul {
   list-style: none;
@@ -1052,9 +1068,77 @@ li a:hover {
   text-decoration: none;
 }
 
+.ourServices .owl-carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.ourServices .owl-carousel .container-item {
+  width: 360px;
+  height: 400px;
+  position: relative;
+  margin-top: 110px;
+  margin-bottom: -170px;
+}
+.ourServices .owl-carousel .container-item .service-photo {
+  position: absolute;
+  width: 210px;
+  height: 290px;
+  top: -100px;
+  right: 1%;
+  transition: transform 0.2s ease-in-out;
+}
+.ourServices .owl-carousel .container-item .service-photo img {
+  border-radius: 61px;
+  background: #FFFFFF;
+  box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.ourServices .owl-carousel .container-item .service-description {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 210px;
+  height: 290px;
+  padding: 0 20px;
+  background: #FFFFFF;
+  border-radius: 61px;
+  box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 576px) {
+  .ourServices .owl-carousel .container-item .service-description {
+    top: 40px;
+  }
+}
+.ourServices .owl-carousel .container-item .service-description .title {
+  height: auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #223588;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .ourServices .owl-carousel .container-item .service-description .title {
+    width: 80%;
+  }
+}
+.ourServices .owl-carousel .container-item .service-description p {
+  font-family: "Allerta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #707070;
+  text-align: center;
+}
+
 .hero-section .geodesic {
-  width: 50vw;
-  height: 55vw;
+  width: 40vw;
+  height: 45vw;
   bottom: -65px;
   right: 0;
   opacity: 0.2;
@@ -1323,6 +1407,15 @@ li a:hover {
   height: 100%;
 }
 
+.best-sellers-btn {
+  margin-left: 40px;
+}
+@media (max-width: 576px) {
+  .best-sellers-btn {
+    margin-left: 0 !important;
+  }
+}
+
 .testimonials {
   height: auto;
 }
@@ -1334,6 +1427,12 @@ li a:hover {
   width: 100%;
   height: 500px;
   top: 0;
+}
+@media (max-width: 576px) {
+  .testimonials .subscribe-form input, .testimonials .subscribe-form button {
+    width: 100% !important;
+    max-width: none !important;
+  }
 }
 .testimonials .subscribe-container {
   top: 0;
@@ -1399,11 +1498,11 @@ li a:hover {
   border: none;
   box-sizing: border-box;
   box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 70%;
+  width: 80%;
   margin: 20px 0;
 }
 .testimonials form button {
-  width: 30% !important;
+  width: 20% !important;
   font-size: 0.9rem;
 }
 .testimonials .testimonials-container {
@@ -1541,6 +1640,13 @@ footer {
   font-family: "Allerta";
   font-size: 1.1rem;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #FF9900;
+}
 footer .row-footer {
   width: 90%;
 }
@@ -1628,10 +1734,6 @@ footer .more li {
 footer .more-data {
   width: 100%;
   color: white;
-}
-footer .more-data a {
-  color: white;
-  text-decoration: none;
 }
 footer .more-data i {
   font-size: 30px;
