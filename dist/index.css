@@ -1507,7 +1507,6 @@ li a:hover {
 }
 .testimonials .testimonials-container {
   height: auto;
-  min-width: 450px;
 }
 @media (min-width: 992px) {
   .testimonials .testimonials-container {
@@ -1559,8 +1558,8 @@ li a:hover {
 }
 @media (max-width: 576px) {
   .testimonials .message {
-    padding: 35px;
-    min-width: 280px;
+    padding: 25px;
+    min-width: 250px;
   }
 }
 .testimonials .message .photo {
@@ -1641,6 +1640,8 @@ footer {
   font-size: 1.1rem;
 }
 footer a {
+  display: flex;
+  align-items: center;
   color: white;
   text-decoration: none;
 }
@@ -1725,8 +1726,13 @@ footer .more ul {
   list-style: none;
   padding: 0px;
   margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 200px;
 }
 footer .more li {
+  display: flex;
   width: 100%;
   margin: 9px 0;
   cursor: pointer;

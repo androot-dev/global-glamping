@@ -1088,7 +1088,7 @@ $height-card-sm: 260px;
     .testimonials-container {
         height: auto;
       
-        min-width: 450px;
+       
         @include desktops{
             padding-left: -17%;
         }
@@ -1133,8 +1133,8 @@ $height-card-sm: 260px;
         }
 
         @include phones {
-            padding: 35px;
-            min-width: 280px;
+            padding: 25px;
+            min-width: 250px;
         }
 
         .photo {
@@ -1218,6 +1218,8 @@ footer {
     font-size: 1.1rem;
     
         a {
+            display: flex;
+            align-items: center;
             color: white;
             text-decoration: none;
             &:hover{
@@ -1294,9 +1296,14 @@ footer {
             list-style: none;
             padding: 0px;
             margin-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 200px;
         }
 
         li {
+            display: flex;
             width: 100%;
             margin: 9px 0;
             cursor: pointer;
