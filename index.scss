@@ -39,8 +39,8 @@ header {
         font-size: 3.5rem;
         padding-left: $lateral-separation;
         @include phones {
-            text-align: center;
-            padding-left: 0 !important;
+          padding-left: $lateral-separation-min
+      
         }
     }
 
@@ -52,10 +52,10 @@ header {
         margin-bottom: 40px;
         padding-left: $lateral-separation;
         @include phones {
-            width: 100% !important;
-            text-align: center;
-            padding-left: 0 !important;
+          padding-left: $lateral-separation-min
+      
         }
+        
     }
     .get-now-btn{
         position:absolute;
@@ -996,6 +996,7 @@ $height-card-sm: 260px;
     }
     .subscribe-form {
         input, button{
+            height: 50px;
             @include phones{
                 width: 100% !important;
                 max-width: none !important;
@@ -1074,13 +1075,14 @@ $height-card-sm: 260px;
             border: none;
             box-sizing: border-box;
             box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
-            width: 80%;
+            width: 75%;
             margin: 20px 0;
+            margin-right: 5% !important;
         }
 
         button {
             width: 20% !important;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
     }
@@ -1125,7 +1127,7 @@ $height-card-sm: 260px;
         min-height: 250px;
         position: relative;
         font-size: 1.1rem;
-
+        @include flex(center);
         @include tablets {
             padding: 50px;
             width: 90vw;

@@ -239,7 +239,7 @@
   background: #223588 !important;
   position: fixed !important;
   top: 40px !important;
-  height: 40px !important;
+  height: 45px !important;
 }
 
 .topheader-fixed {
@@ -457,8 +457,7 @@ header {
 }
 @media (max-width: 576px) {
   .hero h1 {
-    text-align: center;
-    padding-left: 0 !important;
+    padding-left: 20px;
   }
 }
 .hero h2 {
@@ -471,9 +470,7 @@ header {
 }
 @media (max-width: 576px) {
   .hero h2 {
-    width: 100% !important;
-    text-align: center;
-    padding-left: 0 !important;
+    padding-left: 20px;
   }
 }
 .hero .get-now-btn {
@@ -1428,6 +1425,9 @@ li a:hover {
   height: 500px;
   top: 0;
 }
+.testimonials .subscribe-form input, .testimonials .subscribe-form button {
+  height: 50px;
+}
 @media (max-width: 576px) {
   .testimonials .subscribe-form input, .testimonials .subscribe-form button {
     width: 100% !important;
@@ -1498,12 +1498,13 @@ li a:hover {
   border: none;
   box-sizing: border-box;
   box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 80%;
+  width: 75%;
   margin: 20px 0;
+  margin-right: 5% !important;
 }
 .testimonials form button {
   width: 20% !important;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .testimonials .testimonials-container {
   height: auto;
@@ -1548,6 +1549,11 @@ li a:hover {
   min-height: 250px;
   position: relative;
   font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .testimonials .message {
