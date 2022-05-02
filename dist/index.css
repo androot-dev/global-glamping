@@ -79,8 +79,8 @@
 }
 .nav-dots .circle {
   background: #b4b4b4;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   justify-content: space-between;
   align-items: space-between;
   border-radius: 50%;
@@ -804,8 +804,9 @@ li a:hover {
   font-weight: 400;
   font-size: 1rem;
   color: #6d6868;
-  text-align: right;
-  padding-right: 40px;
+  text-align: left;
+  padding-right: 20%;
+  padding-left: 5%;
 }
 @media (max-width: 576px) {
   .aboutUs p {
@@ -820,7 +821,7 @@ li a:hover {
 }
 .aboutUs .button-read {
   z-index: 10;
-  padding-right: 40px;
+  padding-right: 25%;
 }
 @media (max-width: 576px) {
   .aboutUs .button-read {
@@ -1173,7 +1174,7 @@ li a:hover {
   height: auto !important;
 }
 .ourServices .action-btn-container {
-  padding-left: 40px;
+  padding-left: 20%;
 }
 @media (max-width: 576px) {
   .ourServices .action-btn-container {
@@ -1181,7 +1182,7 @@ li a:hover {
   }
 }
 .ourServices .text-ourServices {
-  padding-left: 40px;
+  padding-left: 15%;
   font-family: "Allerta";
   font-style: normal;
   font-weight: 400;

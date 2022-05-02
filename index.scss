@@ -360,8 +360,9 @@ li a {
 
     p {
         @include parrafo();
-        text-align: right;
-        padding-right: $lateral-separation;
+        text-align: left;
+        padding-right: 20%;
+        padding-left: 5%;
         @include phones{
             padding-right: 0;
         }
@@ -369,7 +370,7 @@ li a {
 
     .button-read {
         z-index: 10;
-        padding-right: $lateral-separation;
+        padding-right: 25%;
         @include phones{
             padding-right: 0;
         }
@@ -727,7 +728,7 @@ $height-card-sm: 260px;
     position: relative;
     height: auto !important;
     .action-btn-container{
-        padding-left: $lateral-separation;
+        padding-left: 20%;
 
         @include phones{
             padding-left: 0;
@@ -738,8 +739,7 @@ $height-card-sm: 260px;
         @include tablets {
             width: 100%;
         }
-
-        padding-left: $lateral-separation;
+        padding-left: 15%;
        @include parrafo();
        @include phones(){
            padding-left: 0;
