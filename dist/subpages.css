@@ -1,0 +1,157 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes swipe {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.hero {
+  min-height: 450px !important;
+  height: 50vh;
+}
+
+.hero-section {
+  height: 50vh !important;
+  min-height: 450px !important;
+}
+
+.background-section .video-background {
+  min-height: 450px !important;
+  height: 50vh !important;
+  object-position: 0 0px;
+  top: 45%;
+}
+
+.hero-section .geodesic {
+  width: 20vw;
+  height: 25vw;
+  bottom: -65px;
+  right: 0;
+  opacity: 0.2;
+}
+
+.overlay-to-white {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(164, 164, 164, 0.336) 53.44%, #FFFFFF 91.46%);
+}
+
+.hero-info {
+  padding-top: 100px;
+}
+
+.contactUs .ourHistory {
+  background: linear-gradient(0deg, #dadada, white);
+}
+.contactUs .contact {
+  background: linear-gradient(0deg, white, #dadada);
+}
+.contactUs .ourHistory .information-1 .img-ref img {
+  box-shadow: inset 0px 0px 45px 32px whitesmoke;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.contactUs form,
+.contactUs label,
+.contactUs input {
+  font-family: "Allerta";
+  font-size: 0.9rem;
+}
+.contactUs .map iframe {
+  border-radius: 40px;
+  box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contactUs input,
+.contactUs textarea {
+  border: none;
+  box-sizing: border-box;
+  box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 75% !important;
+  margin: 3px 0;
+  height: 50px;
+  border-radius: 10px !important;
+  padding: 20px !important;
+  font-family: "Allerta";
+  font-size: 1rem !important;
+  margin-top: 20px;
+}
+.contactUs textarea {
+  border-radius: 30px !important;
+}
+.contactUs label {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1rem;
+  padding-left: 10px !important;
+  height: 0px !important;
+  width: 100% !important;
+}
+.contactUs .card-header {
+  color: #223588 !important;
+  font-family: "Rubik";
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 10px !important;
+}
+.contactUs .card {
+  background: #ebebeb !important;
+}
+
+.ourHistory {
+  background: linear-gradient(0deg, #dadada, white);
+}
+.ourHistory .information-1 .img-ref img {
+  box-shadow: inset 0px 0px 45px 32px whitesmoke;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  min-height: 350px;
+}
+.ourHistory form, .ourHistory label, .ourHistory input {
+  font-family: "Allerta";
+  font-size: 0.9rem;
+}
+.ourHistory p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Allerta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6d6868;
+}
+@media (max-width: 576px) {
+  .ourHistory p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .ourHistory p {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+.ourHistory .container-img-carousel {
+  width: 100%;
+  height: 350px;
+  border-radius: 61px;
+  box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.ourHistory .container-img-carousel > img {
+  border-radius: 61px !important;
+}
+
+.testimonials-2 {
+  background: linear-gradient(0deg, white, #dadada);
+}

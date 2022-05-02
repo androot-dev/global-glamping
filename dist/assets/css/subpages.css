@@ -1,0 +1,35 @@
+
+    .hero {
+        min-height: 450px !important;
+        height: 50vh;
+    }
+
+    .hero-section {
+        height: 50vh !important;
+        min-height: 450px !important;
+    }
+
+    .background-section .video-background {
+        min-height: 450px !important;
+        height: 50vh !important;
+        object-position: 0 0px;
+        top: 45%;
+
+    }
+
+    .hero-section .geodesic {
+        width: 20vw;
+        height: 25vw;
+        bottom: -65px;
+        right: 0;
+        opacity: 0.2;
+    }
+
+    .overlay-to-white {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(164, 164, 164, 0.336) 53.44%, #FFFFFF 91.46%);
+
+    }
+
+    .hero-info {
+        padding-top: 100px;
+    }

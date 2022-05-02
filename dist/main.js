@@ -23,31 +23,18 @@ $(document).ready(function() {
             }, 200);
 }
       });
-    });
-
-    
-    
- 
-
- 
-    $(`.closeMenu`).on("click", function () {
+      $(`.closeMenu`).on("click", function () {
         $(".mysidebar").removeClass("openSide");
-    });
-    $(`.btn-menu`).on("click", function () {
-        $(".mysidebar").addClass("openSide");
-    });
-    $(".services-container .owl-carousel").owlCarousel({
-        items: 3,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2,
-            },
-            1000: {
-                items: 3,
-            },
-        },
-        center: true,
-    });    
+        });
+        $(`.btn-menu`).on("click", function () {
+            $(".mysidebar").addClass("openSide");
+        });
+});
+
+
+    
+    
+ 
+
+ 
+   

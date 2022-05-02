@@ -72,13 +72,17 @@
     <!-- SIDEBAR -->
     
     <section class="container-fluid services-container">
-        <h1>Our Services</h1>
-        <p class="p-4">The glamping industry is relatively new and as with any emerging industry many questions arise as
-            to where to start and how to optimize your business. At Global Glamping we have taken the guess work out of
-            the process! By developing our own proof of concept at the Global Glamping Headquarters in Montana we
-            harnessed the power of best practices both for the new entrepreneur and the expanding camp owner.
-            Our straightforward process:
-        </p>
+        <div class="row">
+            <h1>Our Services</h1>
+            <p class="p-4">The glamping industry is relatively new and as with any emerging industry many questions arise as
+                to where to start and how to optimize your business. At Global Glamping we have taken the guess work out of
+                the process! By developing our own proof of concept at the Global Glamping Headquarters in Montana we
+                harnessed the power of best practices both for the new entrepreneur and the expanding camp owner.
+                Our straightforward process:
+            </p>
+            
+        </div>
+       
             
         <div class="services justify-content-around owl-carousel">
             <div class="">
@@ -179,7 +183,23 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script>
+              $(".services-container .owl-carousel").owlCarousel({
+            items: 3,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
+            center: true,
+        });    
+    </script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ $title-margin-bottom: 80px;
     font-size: 1.7rem;
     color: $primary;
     @include phones(){
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-align: center;
     }
     @content;

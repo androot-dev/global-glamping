@@ -14,17 +14,11 @@ html {
     @include tablets {
         font-size: 90%;
     }
-
-    @include phones {
-        font-size: 70%;
-    }
 }
 
 header {
  
     position: relative;
-
-   
 }
 .hero {
     z-index: 2;
@@ -36,11 +30,14 @@ header {
         font-family: 'Rubik';
         font-style: normal;
         font-weight: 400;
-        font-size: 3.5rem;
+        font-size: 3rem;
         padding-left: $lateral-separation;
         @include phones {
           padding-left: 0;
-      
+         
+        }
+        @include phonexs{
+            font-size: 2.5rem;
         }
     }
 
@@ -55,6 +52,10 @@ header {
           padding-left: 0;
       
         }
+        @include phonexs {
+            padding-left: 0;
+            font-size: 1.5rem;
+          }
         
     }
     .get-now-btn{
@@ -82,10 +83,7 @@ header {
         color: #FFFFFF;
     }
 
-    .video-background {
-        z-index: 1;
-    }
-
+   
     .nav-menu {
 
         min-width: 270px;
@@ -135,7 +133,14 @@ header {
 }
 
 .best-sellers {
-
+    .best-sellers-btn{
+        padding-left: 65px;
+        margin-top: -30px;
+        @include phones{
+            padding-left: 0;
+        }
+    }
+ 
     .nav-dots{
         @include phones{
             display: none !important;
@@ -208,10 +213,20 @@ header {
         h2 {
             @include subtitle();
             width: 100% !important;
+            padding-bottom: 30px;
+            padding-left: $lateral-separation;
+            @include phones {
+                padding-left: 0;
+            }
         }
-
         p {
            @include parrafo();
+           padding-right: 5%;
+           padding-left: $lateral-separation;
+              @include phones {
+                 padding-left: 0;
+                 padding-right: 0;
+            }
         }
 
     }
@@ -220,7 +235,7 @@ header {
         width: 200px;
         height: 270px;
         transition: all 0.2s linear;
-        transform: scale(1.05);
+        transform: scale(1.1);
 
         .btn-car,
         .price {
@@ -242,7 +257,7 @@ header {
         visibility: hidden;
         box-shadow: $shadowSimple;
         transition: transform 0.2s ease-in-out;
-
+        
         &:hover {
             transform: scale(1.2);
         }
@@ -338,7 +353,9 @@ li a {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(236, 236, 236, 1) 16%, rgba(223, 223, 223, 1) 34%, rgba(219, 219, 219, 1) 51%, rgba(226, 226, 226, 1) 70%, rgba(236, 236, 236, 1) 92%, rgba(255, 255, 255, 1) 100%);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(236, 236, 236, 1) 16%, rgba(223, 223, 223, 1) 34%, rgba(219, 219, 219, 1) 51%, rgba(226, 226, 226, 1) 67%, rgba(236, 236, 236, 1) 84%, rgba(255, 255, 255, 1) 100%);
     .text-about{
+        z-index: 5;
         @include parrafo();
+
     }
     .overlay {
         width: 100%;
@@ -352,10 +369,22 @@ li a {
     .geodesic {
         z-index: 5;
         pointer-events: none;
-        opacity: 0.1;
-        filter: brightness(50%);
-        height: 100%;
+        opacity: 1;
+        background-image: url("assets/geodesic-about.png");
 
+        width: 35vw;
+        height: 100%;
+        top:10%;
+        min-width: 400px;
+        min-height: 400px;
+        max-width: 550px;
+        max-height: 550px;
+        background-size: cover;
+        background-position: right ;
+        right: 0px;
+
+     
+     
     }
 
     p {
@@ -365,11 +394,15 @@ li a {
         padding-left: 5%;
         @include phones{
             padding-right: 0;
+            padding-left: 0;
         }
     }
 
     .button-read {
-        z-index: 10;
+        *{
+            z-index: 5; 
+        }
+        z-index: 5;
         padding-right: 25%;
         @include phones{
             padding-right: 0;
@@ -384,7 +417,7 @@ li a {
         min-width: 270px;
         min-height: 550px;
         background: #223588;
-
+        z-index:3;
         @include phones(){
             width: 50%;
             height: 100%;
@@ -414,18 +447,19 @@ li a {
         top: 0;
         border-radius: 0 82px 82px 0;
         @include flex(flex-start);
-        position: relative;
+        position: relative;z-index:3;
     }
 
     .square-3 {
         @include flex(flex-start);
         width: 90%;
         height: 85%;
+
         padding: 10px;
         background: #2E48BB;
         top: 0;
         border-radius: 0 82px 82px 0;
-    
+        z-index:3;
         h1 {
             writing-mode: vertical-lr;
             transform: rotate(180deg);
@@ -451,7 +485,7 @@ li a {
         right: -160px;
         position: absolute;
         border-radius: 82px;
-
+z-index:3;
         @include phones {
             width: 45%;
             height: 320px;
@@ -463,7 +497,7 @@ li a {
         @media (max-width: 405px) {
             min-width: 205px;
             min-height: 240px;
-            right: -25%;
+            right: -30%;
         }
 
 
@@ -475,7 +509,7 @@ li a {
 .closeMenu {
     border: none;
     border-radius: 50%;
-    background-color: #16266C;
+
 }
 
 @keyframes slide-in-left {
@@ -500,8 +534,8 @@ li a {
 
 .openSide {
     max-width: 250px;
-    min-width: 150px;
-    width: 40% !important;
+    min-width: 190px;
+    width: 45% !important;
     display: block !important;
     z-index: 1000;
 }
@@ -574,7 +608,7 @@ li a {
     background: #16266C;
     color: white;
     position: fixed;
-
+ 
     top: 0;
     right: 0;
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -582,6 +616,9 @@ li a {
         margin-top:20px;
     }
     .closeMenu {
+        width: 25px;
+        height: 25px;
+        @include flex(center);
         align-self: flex-end;
         position: absolute;
         top: 10px;
@@ -598,12 +635,12 @@ li a {
             padding: 5px;
             cursor: pointer;
             text-align: right;
-            font-size: 17px;
+            font-size: 1rem;
             font-family: 'Allerta';
 
             a {
                 color: white;
-
+                font-size: 1rem;
                 text-decoration: none;
 
                 &:hover {
@@ -622,6 +659,9 @@ $height-card-md: 280px;
 $height-card-sm: 260px;
 
 .ourServices{
+    .title-section{
+        width: 100%;
+    }
     .nav-dots{
         right: $lateral-separation;
     }
@@ -913,9 +953,12 @@ $height-card-sm: 260px;
     background: linear-gradient(180deg, rgba(230, 230, 229, 1) 0%, rgba(230, 230, 229, 1) 26%, rgba(235, 235, 235, 1) 39%, rgba(240, 240, 240, 1) 59%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 84%, rgba(255, 255, 255, 1) 100%);
     background: linear-gradient(180deg, rgba(223, 222, 221, 1) 0%, rgba(230, 230, 229, 1) 26%, rgba(235, 235, 235, 1) 39%, rgba(240, 240, 240, 1) 59%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 84%, rgba(255, 255, 255, 1) 100%);
     position: relative;
-
+    background-color: #16266C;
     height: auto;
-
+    .owl-stage, .owl-stage-outer{
+        width: 100%;
+        max-height: 150px !important;
+    }
     .overlay {
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 79%, rgba(224, 224, 224, 1) 100%);
@@ -924,10 +967,13 @@ $height-card-sm: 260px;
         height: 100%;
         top: 0;
     }
-    .logos div {
+    .logos{
+        width: 100vw !important;
+    }
+    .logos .owl-item {
 
         transition: transform 0.2s linear;
-
+        
         &:hover {
             transform: scale(1.1);
 
@@ -966,7 +1012,7 @@ $height-card-sm: 260px;
         height: 188px;
         min-width: 226px;
         min-height: 188px;
-
+        padding-bottom: 20px;
         img {
             width: 100%;
             height: 100%;
@@ -1008,7 +1054,28 @@ $height-card-sm: 260px;
 }
 .testimonials {
     height: auto;
-
+    .geodesic {
+        z-index: 5;
+        pointer-events: none;
+        opacity: 0.2;
+        background-image: url("assets/DOMOS NEGRO.png");
+        width: 40vw;
+        height: 30vw;
+        min-width: 400px;
+        min-height: 500px;
+        background-size: contain;
+        background-position: 0 0; 
+        right: 0%;
+        top: -30%;
+        .overlay-geodesic{
+            width: 0%;
+            height: 0%;
+            z-index: 5;
+            position: absolute;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.699) 53.44%, #ffffff 91.46%);
+            pointer-events: none;
+        }
+    }
     .overlay {
         background: linear-gradient(0deg, rgba(224, 224, 223, 1) 0%, rgba(233, 233, 233, 0.8939950980392157) 44%, rgba(246, 246, 246, 0.896796218487395) 69%, rgba(255, 255, 255, 1) 100%);
         pointer-events: none;
@@ -1060,7 +1127,7 @@ $height-card-sm: 260px;
         width: 200px;
         margin: 0;
         position: absolute;
-        right: 7%;
+        right: 2vw;
         font-size: 1rem;
         top: calc(50%  - 5px);
         text-align: center;
@@ -1114,7 +1181,7 @@ $height-card-sm: 260px;
 
     .testimonials-container {
         height: auto;
-      
+        padding-bottom: 100px;
        
         @include desktops{
             padding-left: -17%;
@@ -1140,7 +1207,7 @@ $height-card-sm: 260px;
     }
 
     .message {
-        width: 60vw ;
+        width: 55vw ;
         min-width: 500px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
@@ -1167,8 +1234,8 @@ $height-card-sm: 260px;
 
         .photo {
             position: absolute;
-            top: -10px;
-            left: -17%;
+            top: -3vw;
+            left: -13vw;
 
             @include tablets {
                 left: 0;
@@ -1185,8 +1252,8 @@ $height-card-sm: 260px;
             width: 18vw;
             height: 18vw;
 
-            max-width: 180px;
-            max-height: 180px;
+            max-width: 220px;
+            max-height: 220px;
             min-width: 150px;
             min-height: 150px;
             border-radius: 61px;
@@ -1211,7 +1278,7 @@ $height-card-sm: 260px;
             border-radius: 50px;
             position: absolute;
             font-size: 0.9rem;
-            left: 0;
+            left: 4vw;
             @include tablets {
                 top: -50px;
                 left: 100px;
@@ -1219,7 +1286,7 @@ $height-card-sm: 260px;
 
             @include phones {
                 text-align: right;
-                min-width: 280px;
+                min-width: 250px;
                 left: 10px;
 
 
@@ -1227,7 +1294,7 @@ $height-card-sm: 260px;
             @include phonexs{
                 padding-right: 15px;
                 text-align: right;
-                min-width: 270px;
+                min-width: 250px;
                 left: 0;
             }
 
