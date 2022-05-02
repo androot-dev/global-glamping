@@ -39,7 +39,7 @@ header {
         font-size: 3.5rem;
         padding-left: $lateral-separation;
         @include phones {
-          padding-left: $lateral-separation-min
+          padding-left: 0;
       
         }
     }
@@ -52,7 +52,7 @@ header {
         margin-bottom: 40px;
         padding-left: $lateral-separation;
         @include phones {
-          padding-left: $lateral-separation-min
+          padding-left: 0;
       
         }
         
@@ -438,7 +438,7 @@ li a {
             margin-left: 10%;
 
             @include phones {
-                font-size: 2.6rem;
+                font-size: 2.7rem;
             }
         }
 
@@ -619,69 +619,93 @@ $width-card-sm: 180px;
 $height-card-lg: 290px;
 $height-card-md: 280px;
 $height-card-sm: 260px;
-.ourServices .owl-carousel{
-    @include flex(center);
-    .container-item{
-        width:  $width-card-lg + 150;
-        height: 400px;
-        position: relative;
-        margin-top:110px;
-        margin-bottom:-170px;
-       
- 
 
-        .service-photo{
-            position: absolute;
-            width: $width-card-lg;
-            height: $height-card-lg;
-            top:-100px;
-            right: 1%;
-            transition: transform 0.2s ease-in-out;
-
-            img{
-                border-radius: 61px;
-                background: #FFFFFF;
-                box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
-                object-fit: cover;
+.ourServices{
+    .nav-dots{
+        right: $lateral-separation;
+    }
+    .owl-carousel{
+        .container-item{
+            width:  $width-card-lg + 150;
+            height: 400px;
+            position: relative;
+            margin-top:110px;
+            margin-bottom:-170px;
+            margin-right: 80px;
+            @include phones{
+                margin-right: 0;
             }
-        }
-        .service-description{
-            top:0;
-            left: 0;
-            position: absolute;
-            width: $width-card-lg;
-            height: $height-card-lg;
-            padding: 0 20px;
-            background: #FFFFFF;
-            border-radius: 61px;
-            box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
 
-            @include phones {
-                top: 40px;
-    
-            }
-            .title{
-                height: auto;
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1rem;
-                color: $primary;
-                text-align: center;
-                width: 100%;
-
-                @include tablets {
-                    width: 80%;
+            .service-photo{
+                position: absolute;
+                width: $width-card-lg;
+                height: $height-card-lg;
+                @media (max-width: 365px) {
+                    width: 200px;
+                    height: 150px;
                 }
-                
+                top:-100px;
+                right: 1%;
+                transition: transform 0.2s ease-in-out;
+
+                img{
+                    border-radius: 61px;
+                    background: #FFFFFF;
+                    box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+                    object-fit: cover;
+                }
             }
-            p{
-                font-family: 'Allerta';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 13px;
-                color: $p-color;
-                text-align: center;
+            .service-description{
+                .step{
+                    font-size: 1.4rem;
+                    font-family: "Rubik";
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    background: $primary;
+                    color: white;
+                }
+                top:0;
+                left: 0;
+                position: absolute;
+                width: $width-card-lg;
+                height: $height-card-lg;
+                padding: 0 20px;
+                background: #FFFFFF;
+                border-radius: 61px;
+                box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+                @media (max-width: 365px) {
+                    width: 200px;
+                    height: 280px;
+                }
+
+                @include phones {
+                    top: 40px;
+        
+                }
+                .title{
+                    height: auto;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: $primary;
+                    text-align: center;
+                    width: 100%;
+
+                    @include tablets {
+                        width: 80%;
+                    }
+                    
+                }
+                p{
+                    font-family: 'Allerta';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: $p-color;
+                    text-align: center;
+                }
             }
         }
     }
@@ -1038,8 +1062,9 @@ $height-card-sm: 260px;
         position: absolute;
         right: 7%;
         font-size: 1rem;
-        top: calc(50% - 85px);
-        
+        top: calc(50%  - 5px);
+        text-align: center;
+        justify-content: center;
         @include tablets {
             right: calc(50% - 100px);
             bottom: calc(50% - 180px);
@@ -1127,6 +1152,7 @@ $height-card-sm: 260px;
         min-height: 250px;
         position: relative;
         font-size: 1.1rem;
+        font-family: "Allerta";
         @include flex(center);
         @include tablets {
             padding: 50px;
@@ -1185,7 +1211,7 @@ $height-card-sm: 260px;
             border-radius: 50px;
             position: absolute;
             font-size: 0.9rem;
-
+            left: 0;
             @include tablets {
                 top: -50px;
                 left: 100px;

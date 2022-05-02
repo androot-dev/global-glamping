@@ -47,23 +47,27 @@
     </header>
        <!--hero-content-->
     <section class="position-relative hero-section">
-        <div class="background-section">
-             <video class="video-background" src="assets/videoHero.mp4" playsinline="playsinline" autoplay="autoplay"
-             loop="loop" muted></video>  
-             <div class="geodesic"></div>   
-             <div class="layer overlay-to-white"></div>  
-        </div>  
-         <div class="content-section hero d-flex text-white justify-content-start align-items-center">
-             <div class="hero-info  position-relative w-100">
-                 <h1 class="w-100">GLOBAL GLAMPING</h1>
-                 <h2 class="w-75">Explore your world</h2>
-                 <div class="w-100 justify-content-sm-start justify-content-center d-flex get-now-btn">
-                     <a href="./products.html" class="action-btn">
-                         GET NOW
-                     </a>
-                 </div>
-            </div>
-         </div>
+        <div class="container-fluid">
+            <div class="background-section row">
+                <video class="video-background" src="assets/videoHero.mp4" playsinline="playsinline" autoplay="autoplay"
+                loop="loop" muted></video>  
+                <div class="geodesic"></div>   
+                <div class="layer overlay-to-white"></div>  
+           </div>  
+           <div class="row content-section hero d-flex text-white justify-content-start align-items-center">
+            <div class="col-12 hero-info  position-relative w-100">
+                <h1 class="w-100">GLOBAL GLAMPING</h1>
+                <h2 class="w-75">Explore your world</h2>
+                <div class="w-100 justify-content-sm-start justify-content-center d-flex get-now-btn">
+                    <a href="./products.html" class="action-btn">
+                        GET NOW
+                    </a>
+                </div>
+           </div>
+        </div>
+        </div>
+        
+        
 
     </section>
     <!-- SIDEBAR -->
@@ -75,6 +79,8 @@
             <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
             <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
             <li><a href="./our_services.html">Services</a><i class='bx bx-world'></i></li>
+            <li><a href="./products.html">Products</a><i class='bx bx-package'></i></li>
+            <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
             <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
         </ul>
         <div class="d-flex justify-content-center container-closeMenu">
@@ -255,14 +261,15 @@
                         </div>
                     </div>
 
-                    <div class="carousel-our col-12 col-md-6   ">
-         
+                    <div class="carousel-our col-12 col-md-6  position-relative d-flex ">
+                       
                         <div class="owl-carousel">
                             <div class="container-item">
                                 <div class="service-photo">
                                     <img src="assets/services/cleaning.png" alt="">
                                 </div>
                                 <div class="service-description">
+                                    <div class="step"> 1 </div>  
                                     <h3 class="title">CLEANING</h3>
                                     <p>Creating content that your guests will love to engage with is so important. Our
                                         team of experts will make sure your guests are teaming with excitement to visit
@@ -274,6 +281,7 @@
                                         <img src="assets/services/digital.webp" alt="">
                                     </div>
                                     <div class="service-description">
+                                        <div class="step"> 2 </div> 
                                         <h3 class="title">DIGITAL</h3>
                                         <p>By managing your social media accounts, we will reach a wide range of
                                             potential guests who will love staying at your glampcamp! </p>
@@ -284,6 +292,7 @@
                                         <img src="assets/services/development.webp" alt="">
                                     </div>
                                     <div class="service-description">
+                                        <div class="step"> 3 </div> 
                                         <h3 class="title">DEVELOPMENT </h3>
                                         <p>Using fly-over drone footage, high resolution quality pictures, and
                                             captivating video the features and essence of your camp will be eloquently
@@ -296,6 +305,7 @@
                                         <img src="assets/services/content.webp" alt="">
                                     </div>
                                     <div class="service-description">
+                                        <div class="step"> 4 </div> 
                                         <h3 class="title">CONTENT </h3>
                                         <p>We help generate revenue by ensuring your average nightly rental price is
                                             competitive in the marketplace by taking advantage of trends and local
@@ -307,14 +317,23 @@
                                         <img src="assets/services/engineering.webp" alt="">
                                     </div>
                                     <div class="service-description">
+                                        <div class="step"> 5 </div> 
                                         <h3 class="title">ENGINEERING </h3>
                                         <p>Glampers are looking for "community and experiences". Global Glamping will
                                             scout your area for unique attractions and experience packages to offer your
                                             guests! </p>
                                     </div>
                                 </div>            
-                            </div>
                         </div>
+                        <div class="position-absolute nav-dots m-1 m-sm-3">
+                            <div class="vertical-line"> </div>
+                            <div class="circle selected-circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
                 </div>
             <div class="row d-flex d-md-none">
                 <div class="action-btn-container  w-100  button-read justify-content-center d-flex">
@@ -369,6 +388,7 @@
             <div class="col-1 d-sm-flex d-none w-100 position-relative"><span class="nr "><span
                         class="current_nr">1</span>/3</span></div>
             <div class="  col-sm-11 col-12  w-100 position-relative">
+
                 <div class="owl-carousel msg-container">
                     <div class="message message-1">
 
@@ -402,11 +422,10 @@
                             team puts into creating something amazing. Don’t look anywhere else, you’ve found the best!
                         </p>
                     </div>
-
                 </div>
-              
+                <button class="next-btn d-md-flex d-none">NEXT</button>
                 
-               <button class="next-btn d-sm-flex d-none">NEXT</button>
+              
             </div>
 
 
@@ -470,8 +489,8 @@
                         <h2 class="w-100 d-flex justify-content-center  flex-wrap">QUICK LINKS</h2>
                         <ul>
                             <li><a href="./about_us.html">About Us</a></li>
-                            <li>Shop By Category</li>
-                            <li><a href="./our_services.html"></a>Services</li>
+                            <li><a href="./shop_by_category.html">Shop By Category</a></li>
+                            <li><a href="./our_services.html">Services</a></li>
                             <li><a href="./contact_us.html">Contac Us</a></li>
                         </ul>
                     </div>
@@ -519,25 +538,28 @@
                 responsive: {
                     0: {
                         items: 1,
-      
                     },
                     576: {
                         items: 3,
                         nav: false,
                     }
-                }
+                },
+                autoplayspeed: 1000,
+                autoplay: true,
+          
             });
             $(".ourServices  .owl-carousel").owlCarousel({
                 items: 1,
                 loop: true,
                 dots: false,
                 center: true,
+                autoplayspeed: 1000,
+                autoplay: true,
             });
-
             $(`.ourServices .owl-carousel`).on('translated.owl.carousel', function (event) {
-
-                let nr = $(".ourServices .owl-carousel .step").text()[event.item.index];
-                dotsActive(`nav .nav-dots .circle`, event, event.page.index + 2);
+                let index = $(this).find(`.active .step`).text();
+                dotsActive(`.ourServices .nav-dots .circle`,event,  parseInt(index) + 1);
+               
             });
             $(`.best-sellers-carousel-2 .owl-carousel`).on('translated.owl.carousel', function (event) {
                 $(`.best-sellers-carousel-2 .owl-carousel .owl-item`).removeClass("selectedCard");
@@ -549,17 +571,18 @@
             });
             $(`.next-btn`).click(function () {
                 var owl = $(".testimonials-container .owl-carousel");
-                let current_nr = $(".current_nr");
-
                 owl.trigger('next.owl.carousel');
-
+            });
+            $(`.testimonials-container .owl-carousel`).on('translated.owl.carousel', function (event) {
+                let current_nr = $(".current_nr");
                 let current_nr_value = parseInt(current_nr.text()) + 1;
                 if (current_nr_value > 3) {
                     current_nr_value = 1;
                 }
                 current_nr.text(current_nr_value);
             });
-            $(``)
+            dotsLink(`.ourServices .owl-carousel`, `.ourServices .nav-dots .circle`);
+            dotsLink(`.best-sellers-carousel-1 .owl-carousel`, `.best-sellers .nav-dots .circle`);
 
 
 
@@ -570,10 +593,25 @@
                 } else {
                     $(dots).removeClass("selected-circle");
                     let el = $(dots + `:nth-child(${index})`);
-                    console.log(el)
                     el.addClass("selected-circle");
 
                 }
+            }
+            
+            function dotsLink(carousel, dots){
+                $(dots).on('click', function () {
+                
+                if ($(this).hasClass("selected-circle")) {
+                    return;
+                }else{
+                    carousel = $(carousel);
+                    let index = $(this).index();
+
+                    carousel.trigger('to.owl.carousel', [index-1, 300]);
+                    carousel.trigger('stop.owl.autoplay');
+                    carousel.trigger('play.owl.autoplay');
+                }
+            });
             }
         });
 

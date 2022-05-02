@@ -37,6 +37,7 @@
     width: 25px;
     height: 70%;
     position:relative;
+    cursor: pointer;
     @include flex(space-between, wrap,column, center);
     .vertical-line{
         width: 1px;

@@ -55,6 +55,7 @@
   width: 25px;
   height: 70%;
   position: relative;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -457,7 +458,7 @@ header {
 }
 @media (max-width: 576px) {
   .hero h1 {
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 .hero h2 {
@@ -470,7 +471,7 @@ header {
 }
 @media (max-width: 576px) {
   .hero h2 {
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 .hero .get-now-btn {
@@ -904,7 +905,7 @@ li a:hover {
 }
 @media (max-width: 576px) {
   .aboutUs .square-3 h1 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
   }
 }
 .aboutUs .img-square {
@@ -1065,12 +1066,8 @@ li a:hover {
   text-decoration: none;
 }
 
-.ourServices .owl-carousel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+.ourServices .nav-dots {
+  right: 40px;
 }
 .ourServices .owl-carousel .container-item {
   width: 360px;
@@ -1078,6 +1075,12 @@ li a:hover {
   position: relative;
   margin-top: 110px;
   margin-bottom: -170px;
+  margin-right: 80px;
+}
+@media (max-width: 576px) {
+  .ourServices .owl-carousel .container-item {
+    margin-right: 0;
+  }
 }
 .ourServices .owl-carousel .container-item .service-photo {
   position: absolute;
@@ -1086,6 +1089,12 @@ li a:hover {
   top: -100px;
   right: 1%;
   transition: transform 0.2s ease-in-out;
+}
+@media (max-width: 365px) {
+  .ourServices .owl-carousel .container-item .service-photo {
+    width: 200px;
+    height: 150px;
+  }
 }
 .ourServices .owl-carousel .container-item .service-photo img {
   border-radius: 61px;
@@ -1103,6 +1112,21 @@ li a:hover {
   background: #FFFFFF;
   border-radius: 61px;
   box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.ourServices .owl-carousel .container-item .service-description .step {
+  font-size: 1.4rem;
+  font-family: "Rubik";
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #223588;
+  color: white;
+}
+@media (max-width: 365px) {
+  .ourServices .owl-carousel .container-item .service-description {
+    width: 200px;
+    height: 280px;
+  }
 }
 @media (max-width: 576px) {
   .ourServices .owl-carousel .container-item .service-description {
@@ -1466,7 +1490,9 @@ li a:hover {
   position: absolute;
   right: 7%;
   font-size: 1rem;
-  top: calc(50% - 85px);
+  top: calc(50% - 5px);
+  text-align: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .testimonials .next-btn {
@@ -1549,6 +1575,7 @@ li a:hover {
   min-height: 250px;
   position: relative;
   font-size: 1.1rem;
+  font-family: "Allerta";
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1613,6 +1640,7 @@ li a:hover {
   border-radius: 50px;
   position: absolute;
   font-size: 0.9rem;
+  left: 0;
 }
 @media (max-width: 768px) {
   .testimonials .message .name {
