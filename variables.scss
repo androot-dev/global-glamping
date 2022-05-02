@@ -13,7 +13,7 @@ $title-font-size: 1.5rem;
 $p-size: 1rem;
 $title-margin-bottom: 80px;
 
-@mixin subtitle($color: $p-color, $size: $p-size){
+@mixin subtitle(){
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;

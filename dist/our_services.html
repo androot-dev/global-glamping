@@ -10,18 +10,17 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="subpages.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header class=" overlay overlay-to-white d-flex align-items-center justify-content-start">
         <!--topheader-->
-
         <div class=" topheader vw-100 d-flex justify-content-center align-items-center">
             <h3>Get Your Free Catalog</h3>
             <nav class="nav-menu p-2 d-flex position-absolute justify-content-between w-100 align-items-center">
-                <img class="logo-top" src="assets/LOGO.png" />
+                <a href="./"><img class="logo-top" src="assets/LOGO.png" /></a>
                 <div class="options-bar d-flex justify-content-around align-items-center">
                     <i class="bx bx-search"></i>
                     <i class="bx bx-cart"></i>
@@ -29,11 +28,9 @@
                 </div>
             </nav>
         </div>
-
-
         <!--Follow button-->
         <div
-            class="follow-btn w-100 d-flex position-absolute justify-content-center justify-content-sm-end align-items-center">
+            class="follow-btn w-100 d-flex position-fixed justify-content-center justify-content-sm-end align-items-center">
             <div class="hover"><span>Follow</span> <a class="social-link" href="https://twitter.com/glamping_global"
                     target="_blank"> <i class="bx bxl-twitter"></i> </a> <a class="social-link"
                     href="https://www.facebook.com/glamping.global" target="_blank"> <i
@@ -41,19 +38,33 @@
                     href="https://www.instagram.com/glamping.global/" target="_blank"> <i class="bx bxl-instagram"></i>
                 </a> </div>
         </div>
-        <!--video background-->
-        <video class="video-background" src="assets/videoHero.mp4" playsinline="playsinline" autoplay="autoplay"
-            loop="loop" muted></video>
 
-        <!--hero-content-->
-        <div class="hero v-100  d-flex flex-wrap text-white justify-content-start">
-            <h1 class="w-100">Our Services</h1>
-            <h2>GLAMPING GLOBAL</h2>
-            <div class="w-100 justify-content-sm-start justify-content-center d-flex">
+
+    </header>
+    <section class="position-relative hero-section">
+        <div class="container-fluid h-100">
+            <div class="background-section row">
+                <video class="video-background" src="assets/videoHero.mp4" playsinline="playsinline" autoplay="autoplay"
+                    loop="loop" muted></video>
+                <div class="geodesic"></div>
+                <div class="layer overlay-to-white"></div>
+            </div>
+            <div class="row content-section hero d-flex text-white justify-content-start align-items-center">
+                <div class="col-12 hero-info  position-relative w-100">
+                    <h1 class="w-100">SERVICES</h1>
+                    <h2 class="w-75">GLOBAL GLAMPING</h2>
+                    <div class="w-100 justify-content-sm-start justify-content-center d-flex get-now-btn">
+                        <a href="./products.html" class="action-btn">
+                            GET NOW
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-  
-    </header>
+
+
+
+    </section>
     <!-- SIDEBAR -->
     <div class="mysidebar">
         <div class="w-100 mt-4 d-flex justify-content-center">
@@ -63,6 +74,8 @@
             <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
             <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
             <li><a href="./our_services.html">Services</a><i class='bx bx-world'></i></li>
+            <li><a href="./products.html">Products</a><i class='bx bx-package'></i></li>
+            <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
             <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
         </ul>
         <div class="d-flex justify-content-center container-closeMenu">
@@ -72,56 +85,81 @@
     <!-- SIDEBAR -->
     
     <section class="container-fluid services-container">
-        <div class="row">
-            <h1>Our Services</h1>
-            <p class="p-4">The glamping industry is relatively new and as with any emerging industry many questions arise as
-                to where to start and how to optimize your business. At Global Glamping we have taken the guess work out of
-                the process! By developing our own proof of concept at the Global Glamping Headquarters in Montana we
-                harnessed the power of best practices both for the new entrepreneur and the expanding camp owner.
-                Our straightforward process:
-            </p>
-            
-        </div>
-       
-            
-        <div class="services justify-content-around owl-carousel">
-            <div class="">
-                <div class="logo-services">
-                    <i class="bx bx-world"></i>
-                </div>
-                <p>We review your vision and idea for your glampcamp and evaluate how it would work in the marketplace.
-                    If necessary we will conduct a market validation study to make sure the dream fits well with market
-                    demand.</p>
-            </div>
-            <div class="">
-                <div class="logo-services">
-                    <i class='bx bxs-check-circle'></i>
-                </div>
-                <p>An experienced project manager will begin putting your glamp plan together including:
-                    3D model rendering of the property
-                    Financial statements to reflect potential Return on Investment
-                    Necessary local permitting and guideline considerations
-                    Marketing and promotion plan
-                    Complete list of all amenities, adventures/excursions, and necessary additional structures
-                    Interior design plans</p>
-            </div>
-             <div class="">
-                <div class="logo-services">
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>Order all necessary items and complete paperwork for local permits. One last risk assessment prior to
-                    construction.</p>
-            </div>
-            <div class="">
-                <div class="logo-services">
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>Installation and setup of your camp along with pictures, drone footage, and staging for social media and
-                    online booking platforms. We go over all of the specifics for running your glamping business with you so
-                    you are an informed owner from day one!</p>
+        <div class="row justify-content-start ">
+        
+            <div class="col-lg-5 col-md-6 col-sm-8 title-section-left title-section">
+                <h1>OUR SERVICES</h1>
+                <div></div>
             </div>
         </div>
-
+            <div class="container">
+              <div class="card-columns">
+                <div class="card">
+                 
+                  <img class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium...
+                    </p>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                </div>
+                 
+                </div>
+                <div class="card">
+                 
+                  <img class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, doloremque!</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto maxime nemo omnis praesentium similique.</p>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                  </div>
+                 
+                </div>
+                <div class="card">
+                 
+                  <img class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur.</h5>
+                    <p class="card-text">Amet commodi deleniti enim laboriosam odio placeat praesentium quis ratione rerum suscipit.</p>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                  </div>
+                 
+                </div>
+                <div class="card">
+                 
+                  <img class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur.</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                  </div>
+                 
+                </div>
+                <div class="card">
+                 
+                  <img class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur culpa cumque deserunt dignissimos error explicabo fugiat harum ipsam magni minus mollitia nemo perferendis qui repellendus rerum saepe vel voluptate voluptatem voluptatum!
+                      Aperiam, labore, molestiae!..</p>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                  </div>
+                 
+                </div>
+                <div class="card">
+                 
+                  <img class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi debitis eaque explicabo fuga maiores necessitatibus, neque omnis optio vel!</p>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+     
     </section>
 
     <footer class="vw-100 h-auto d-flex justify-content-end align-items-center flex-wrap">
@@ -143,7 +181,7 @@
                             </div>
                             <div class="more-data d-flex ">
                                 <i class='bx bxs-phone'></i>
-                                <span> Tel: <a href="tel:1844WEGLAMP">1-844-WEGLAMP</a></span>
+                                <a href="tel:1844WEGLAMP">1-844-WEGLAMP</a>
                             </div>
                         </div>
                     </div>
@@ -154,9 +192,12 @@
 
                     </div>
                     <div class="icons d-flex w-100 justify-content-center align-items-center mt-3">
-                        <a href="https://www.facebook.com/glamping.global"><i class="bx bxl-facebook-square"></i></a>
-                        <a href="https://twitter.com/glamping_global"> <i class="bx bxl-twitter"></i></a>
-                        <a href="https://www.instagram.com/glamping.global/"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.facebook.com/glamping.global" target="_blank"><i
+                                class="bx bxl-facebook-square"></i></a>
+                        <a href="https://twitter.com/glamping_global" target="_blank"> <i
+                                class="bx bxl-twitter"></i></a>
+                        <a href="https://www.instagram.com/glamping.global/" target="_blank"><i
+                                class="bx bxl-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-12 d-flex justify-content-center align-items-center col-md-4 ">
@@ -164,8 +205,8 @@
                         <h2 class="w-100 d-flex justify-content-center  flex-wrap">QUICK LINKS</h2>
                         <ul>
                             <li><a href="./about_us.html">About Us</a></li>
-                            <li>Shop By Category</li>
-                            <li><a href="./our_services.html"></a>Services</li>
+                            <li><a href="./shop_by_category.html">Shop By Category</a></li>
+                            <li><a href="./our_services.html">Services</a></li>
                             <li><a href="./contact_us.html">Contac Us</a></li>
                         </ul>
                     </div>
@@ -178,28 +219,11 @@
             <a href="https://josesilvera.com/" target="_blank"> <img class="logoSilvera" src="assets/silvera.png"></a>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-              $(".services-container .owl-carousel").owlCarousel({
-            items: 3,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
-                },
-            },
-            center: true,
-        });    
-    </script>
+    
 </body>
 
 </html>

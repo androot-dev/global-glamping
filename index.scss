@@ -540,67 +540,6 @@ z-index:3;
     z-index: 1000;
 }
 
-.services-container {
-    height: auto;
-
-    .services {
-        height: 300px;
-        width: 100%;
-
-        p {
-            display: none;
-        }
-    }
-
-    h1 {
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.8rem;
-        color: $primary;
-        padding: 5px 15px;
-        text-align: left;
-        width: 50%;
-
-        @include tablets {
-            width: 80%;
-        }
-    }
-
-    p {
-
-        font-family: 'Allerta';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.1rem;
-    }
-}
-
-.services {
-    height: auto;
-
-    p {
-        font-family: 'Allerta';
-        font-size: 0.9rem;
-        color: $p-color;
-        text-align: center;
-
-    }
-
-    i {
-        font-size: 150px;
-        color: $primary;
-    }
-
-    .logo-services {
-        @include flex(center);
-    }
-
-    .services>div {
-        height: auto;
-    }
-}
-
 .mysidebar {
     height: 100vh;
     display: none;

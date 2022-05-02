@@ -155,3 +155,31 @@
 .testimonials-2 {
   background: linear-gradient(0deg, white, #dadada);
 }
+
+.services-container .list-services h1 {
+  color: black;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #223588;
+  padding: 10px 0;
+  font-family: "Rubik";
+}
+@media (max-width: 576px) {
+  .services-container .list-services h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.services-container .list-services .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: none;
+}
+.services-container .list-services .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.services-container .list-services .card .text-muted i {
+  margin: 0 10px;
+}
