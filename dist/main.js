@@ -29,6 +29,15 @@ $(document).ready(function() {
         $(`.btn-menu`).on("click", function () {
             $(".mysidebar").addClass("openSide");
         });
+
+      let containerLoader = $('.container-loader');
+        $(window).on(`load`, function() {
+            containerLoader.fadeIn(1000, function() {
+                containerLoader.remove();
+            });
+        
+            document.body.style.overflowY = 'visible';
+        }); 
 });
 
 

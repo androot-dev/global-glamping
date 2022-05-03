@@ -39,18 +39,20 @@
 
 
     </header>
-    <section class="position-relative hero-section">
-        <div class="container-fluid h-100">
-            <div class="background-section row">
+ 
+    <!--hero-content-->
+    <section class="position-relative p-0 m-0 hero-section">
+        <div class="container-fluid p-0 m-0">
+            <div class="background-section ro p-0 m-0">
                 <video class="video-background" src="assets/videoHero.mp4" playsinline="playsinline" autoplay="autoplay"
                     loop="loop" muted></video>
                 <div class="geodesic"></div>
                 <div class="layer overlay-to-white"></div>
             </div>
-            <div class="row content-section hero d-flex text-white justify-content-start align-items-center">
-                <div class="col-12 hero-info  position-relative w-100">
-                    <h1 class="w-100">ABOUT US</h1>
-                    <h2 class="w-75">GLOBAL GLAMPING</h2>
+            <div class="row p-0 m-0 content-section hero d-flex text-white justify-content-end align-items-center">
+                <div class="col-12 p-0 m-0 hero-info  position-relative w-100">
+                    <h1 class="w-100">GLOBAL GLAMPING</h1>
+                    <h2 class="w-75">Explore your world</h2>
                     <div class="w-100 justify-content-sm-start justify-content-center d-flex get-now-btn">
                         <a href="./products.html" class="action-btn">
                             GET NOW
@@ -59,25 +61,10 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
-    <div class="mysidebar">
-        <div class="w-100 mt-4 d-flex justify-content-center">
-            <img src="assets/LOGO.png" class="logo-sidebar" style="width:70px; height:70px;" />
-        </div>
-        <ul>
-            <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
-            <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
-            <li><a href="./our_services.html">Services</a><i class='bx bx-world'></i></li>
-            <li><a href="./products.html">Products</a><i class='bx bx-package'></i></li>
-            <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
-            <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
-        </ul>
-        <div class="d-flex justify-content-center container-closeMenu">
-            <button class="closeMenu bg-danger text-white"><i class="bx bx-x"></i></button>
-        </div>
+
+    <div class="container-loader">
+        <div class="position-absolute loader lds-dual-ring"></div>
     </div>
     <!--ABOUT US-->
     <section class="ourHistory ">
@@ -89,12 +76,19 @@
                 <div></div>
             </div>
         </div>
-            <div class="row information-1 p-4 align-items-start">
-                <p class=" col-md-6 col-12">
-                    <strong>Global Glamping</strong> is a full stack concept to glampsite company that helps people smoothly enter the rapidly expanding glamping industry, expertly expand their current camp or glamp site, and make the most of this exciting community-based movement. We do this by offering the very best in glamping structures, coaching/consulting on best practices, brokering investment partnerships, and delivering innovative new technologies that promote meaningful community-driven interactions.
-                </p>
-
-                <div class="col-md-6 col-12 img-ref justify-content-center owl-carousel">
+            <div class="row information-1 align-items-center">
+                <div class="col-md-6 col-12">
+                    <p>
+                        <strong>Global Glamping</strong> is a full stack concept to glampsite company that helps people smoothly enter the rapidly expanding glamping industry, expertly expand their current camp or glamp site, and make the most of this exciting community-based movement. We do this by offering the very best in glamping structures, coaching/consulting on best practices, brokering investment partnerships, and delivering innovative new technologies that promote meaningful community-driven interactions.
+                    </p>
+                    <div class="w-sm-75 w-100 button-read justify-content-sm-start justify-content-center  d-none d-md-flex">
+                        <a href="./contact_us.html" class="action-btn mt-5">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="col-md-5 col-12 img-ref justify-content-center owl-carousel">
                     <div class="container-img-carousel">
                         <img  src="assets/HERO.jpg" alt="glamping"/>
                     </div> 
@@ -104,13 +98,41 @@
                     <div class="container-img-carousel">
                         <img  src="assets/our2.webp" alt="glamping"/>
                     </div>
+
                 </div>
+                <div class="nav-dots col-md-1 d-md-flex d-none">
+                    <div class="vertical-line"> </div>
+                    <div class="circle selected-circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="col-12 button-read justify-content-center d-flex d-md-none m-0 p-0 ">
+                    <a href="./contact_us.html" class="action-btn mt-5">
+                        Contact Us
+                    </a>
+                </div>
+                
             </div>     
             <div class="row"></div>
         </div>
         
     </section>
-    
+    <div class="mysidebar">
+        <div class="w-100 mt-4 d-flex justify-content-center">
+            <img src="assets/LOGO.png" class="logo-sidebar" style="width:70px; height:70px;" />
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
+            <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
+            <li><a href="./services.html">Services</a><i class='bx bx-world'></i></li>
+            <li><a href="./products.html">Products</a><i class='bx bx-package'></i></li>
+            <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
+            <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
+        </ul>
+        <div class="d-flex justify-content-center container-closeMenu">
+            <button class="closeMenu bg-danger text-white"><i class="bx bx-x"></i></button>
+        </div>
+    </div>
     <section class="testimonials testimonials-2">
         <div class="container-fluid">
 
@@ -239,7 +261,7 @@
                         <ul>
                             <li><a href="./about_us.html">About Us</a></li>
                             <li><a href="./shop_by_category.html">Shop By Category</a></li>
-                            <li><a href="./our_services.html">Services</a></li>
+                            <li><a href="./services.html">Services</a></li>
                             <li><a href="./contact_us.html">Contac Us</a></li>
                         </ul>
                     </div>
@@ -287,6 +309,32 @@
             autoplayHoverPause: true,
             items: 1
         });
+        $(`.first-carousel .owl-carousel`).on('translated.owl.carousel', function (event) {
+          
+                dotsActive(`.first-carousel .owl-carousel`, `.nav-dots .circle`);
+            });
+            dotsLink(`.first-carousel .owl-carousel`, ` .nav-dots .circle`);
+           
+            function dotsActive(carousel,dots) {
+                let active = $(carousel).find('.active');
+                $(dots).removeClass("selected-circle");
+
+                $(dots+":nth-child("+active.index()+")").addClass("selected-circle");
+            }
+            function dotsLink(carousel, dots) {
+                $(dots).on('click', function () {
+                    if ($(this).hasClass("selected-circle")) {
+                        return;
+                    } else {
+                        carousel = $(carousel);
+                        let index = $(this).index();
+                        carousel.trigger('to.owl.carousel', [index - 1, 300]);
+                        carousel.trigger('stop.owl.autoplay');
+                        carousel.trigger('play.owl.autoplay');
+                    }
+                });
+            }
+        
     </script>
 </body>
 </html>

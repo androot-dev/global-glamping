@@ -78,7 +78,16 @@
         font-family: "Rubik";
         background: #223588;
         height: 70px;
-        max-width: 90% !important;
+        max-width: 500px ;
+        min-width: 260px;
+        @include tablets{
+            max-width: 60vw ;
+
+        }
+        @include phones{
+            max-width: 80vw !important;            
+        } 
+
         width: 55%;
         z-index: 6;
         margin-bottom: $title-margin-bottom;
@@ -139,7 +148,7 @@
     z-index: 1;
 }
 .geodesic{
-  background-image: url("assets/DOMOS BLANCO.png");
+  background-image: url("assets/geodesic-hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -169,23 +178,35 @@
   height: 100%;
   pointer-events: none;
   z-index:1;
-
+  top:0 !important;
+  left: 0 !important;
   *{
      position: absolute;
   }
 }
+
 .content-section{
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 5;
 }
+.container-loader{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  @include flex(center);
+  background-color: #ecf0f1;
+  z-index:10000;
+  top: 0 !important;
+  left: 0;
+}
 .logo-top{
     background-image: url("assets/LOGO.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 120px;
+    width: 120px ;
     height: 120px;
     @include phones{
         width: 80px !important;
@@ -217,6 +238,7 @@
         height: auto;
         position: absolute;
         min-width: 100%;
+        min-height: 100%;
         max-height: $hero-height;
         top: 50%;
         left: 50%;

@@ -6,6 +6,7 @@ body {
     font-size: 20px;
     min-width: 280px;
     @include scrollbar("y", $primary, $secondary);
+    overflow: hidden;
 }
 
 html {
@@ -33,8 +34,9 @@ header {
         font-size: 3rem;
         padding-left: $lateral-separation;
         @include phones {
-          padding-left: 0;
-         
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
         }
         @include phonexs{
             font-size: 2.5rem;
@@ -49,11 +51,13 @@ header {
         margin-bottom: 40px;
         padding-left: $lateral-separation;
         @include phones {
-          padding-left: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            width: 100% !important;
       
         }
         @include phonexs {
-            padding-left: 0;
             font-size: 1.5rem;
           }
         
@@ -63,7 +67,9 @@ header {
         bottom:-50px;
         padding-left: $lateral-separation;
         @include phones {
-            padding-left: 0 !important;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
         }
     }
 }
@@ -133,6 +139,7 @@ header {
 }
 
 .best-sellers {
+    
     .best-sellers-btn{
         padding-left: 65px;
         margin-top: -30px;
@@ -157,6 +164,7 @@ header {
             @include phones{
                 @include flex(center);
             }
+            
         }
         .owl-stage-outer{
             height: 300px;
@@ -191,16 +199,22 @@ header {
     }
 
     .best-sellers-carousel-1 {
+        
+      
         .owl-stage {
             transition: all 0.3s linear !important;
             height: auto;
         }
         .owl-item {
-     
+            
             height: auto;
         }
         .owl-stage-outer{
             height: 340px;
+            @include phones{
+                @include scrollbar("y", $primary, $secondary, 0px);
+            }
+           
         }
         .active{
             padding: 0 !important;
@@ -221,6 +235,7 @@ header {
         }
         p {
            @include parrafo();
+           
            padding-right: 5%;
            padding-left: $lateral-separation;
               @include phones {
@@ -230,13 +245,12 @@ header {
         }
 
     }
-
     .best-sellers-carousel-2 .selectedCard {
         width: 200px;
         height: 270px;
         transition: all 0.2s linear;
         transform: scale(1.1);
-
+        
         .btn-car,
         .price {
             animation: fadeIn 0.5s ease-in-out;
@@ -365,11 +379,10 @@ li a {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(164, 164, 164, 0.691458) 53.44%, #FFFFFF 91.46%);
         pointer-events: none;
     }
-
     .geodesic {
         z-index: 5;
         pointer-events: none;
-        opacity: 1;
+        opacity: 0.08;
         background-image: url("assets/geodesic-about.png");
 
         width: 35vw;
@@ -379,13 +392,23 @@ li a {
         min-height: 400px;
         max-width: 550px;
         max-height: 550px;
-        background-size: cover;
+        background-size: contain;
         background-position: right ;
-        right: 0px;
-
+        right: 0px !important;
+        
      
-     
+      
     }
+      .geodesic-overlay{
+            position: absolute;
+            background-color: transparent;
+            right: 0;
+            bottom: 0;
+            width:100%;
+            height: 10%;
+            pointer-events: none;
+            z-index: 6; 
+        }
 
     p {
         @include parrafo();
@@ -481,11 +504,12 @@ li a {
     .img-square {
         width: 80%;
         min-width: 295px;
+        max-height: 400px !important;
         height: 100%;
         right: -160px;
         position: absolute;
         border-radius: 82px;
-z-index:3;
+        z-index:3;
         @include phones {
             width: 45%;
             height: 320px;
@@ -534,7 +558,7 @@ z-index:3;
 
 .openSide {
     max-width: 250px;
-    min-width: 190px;
+    min-width: 200px;
     width: 45% !important;
     display: block !important;
     z-index: 1000;
@@ -676,7 +700,7 @@ $height-card-sm: 260px;
                     @include tablets {
                         width: 80%;
                     }
-                    
+                   
                 }
                 p{
                     font-family: 'Allerta';
@@ -695,9 +719,13 @@ $height-card-sm: 260px;
     .geodesic{
         width: 40vw;
         height: 45vw;
-        bottom:-65px;
-        right:0;
-        opacity: 0.2;
+        bottom: 5px;
+        right: 0;
+        opacity: 0.6;
+        background-size: cover !important;
+        background-position: center !important;
+ 
+        z-index: 5;
     }
 }
 .ourServices {
@@ -733,8 +761,6 @@ $height-card-sm: 260px;
     .overlay {
         height: auto !important;
         width: 100%;
-        background: linear-gradient(0deg, rgba(224, 224, 223, 1) 0%, rgba(233, 233, 233, 0.6418942577030813) 44%, rgba(246, 246, 246, 0.773546918767507) 69%, rgba(255, 255, 255, 1) 100%);
-        background: linear-gradient(0deg, rgba(224, 224, 223, 1) 0%, rgba(233, 233, 233, 0.6418942577030813) 44%, rgba(246, 246, 246, 0.8631827731092436) 69%, rgba(255, 255, 255, 1) 100%);
         background: linear-gradient(0deg, rgba(224, 224, 223, 1) 0%, rgba(233, 233, 233, 0.8939950980392157) 44%, rgba(246, 246, 246, 0.896796218487395) 69%, rgba(255, 255, 255, 1) 100%);
         top: 0;
         z-index: 1;

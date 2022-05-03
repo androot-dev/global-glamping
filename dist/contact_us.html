@@ -14,6 +14,7 @@
 </head>
 
 <body>
+ 
     <header class=" overlay overlay-to-white d-flex align-items-center justify-content-start">
         <!--topheader-->
         <div class=" topheader vw-100 d-flex justify-content-center align-items-center">
@@ -40,16 +41,17 @@
 
 
     </header>
-    <section class="position-relative hero-section">
-        <div class="container-fluid h-100">
-            <div class="background-section row">
+ 
+    <section class="position-relative p-0 m-0 hero-section">
+        <div class="container-fluid p-0 m-0">
+            <div class="background-section ro p-0 m-0">
                 <video class="video-background" src="assets/videoHero.mp4" playsinline="playsinline" autoplay="autoplay"
                     loop="loop" muted></video>
                 <div class="geodesic"></div>
                 <div class="layer overlay-to-white"></div>
             </div>
-            <div class="row content-section hero d-flex text-white justify-content-start align-items-center">
-                <div class="col-12 hero-info  position-relative w-100">
+            <div class="row p-0 m-0 content-section hero d-flex text-white justify-content-end align-items-center">
+                <div class="col-12 p-0 m-0 hero-info  position-relative w-100">
                     <h1 class="w-100">CONTACT US</h1>
                     <h2 class="w-75">GLOBAL GLAMPING</h2>
                     <div class="w-100 justify-content-sm-start justify-content-center d-flex get-now-btn">
@@ -60,10 +62,11 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
+    <div class="container-loader">
+        <div class="position-absolute loader lds-dual-ring"></div>
+    </div>
+
     <div class="mysidebar">
         <div class="w-100 mt-4 d-flex justify-content-center">
             <img src="assets/LOGO.png" class="logo-sidebar" style="width:70px; height:70px;" />
@@ -71,7 +74,7 @@
         <ul>
             <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
             <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
-            <li><a href="./our_services.html">Services</a><i class='bx bx-world'></i></li>
+            <li><a href="./services.html">Services</a><i class='bx bx-world'></i></li>
             <li><a href="./products.html">Products</a><i class='bx bx-package'></i></li>
             <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
             <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
@@ -80,8 +83,6 @@
             <button class="closeMenu bg-danger text-white"><i class="bx bx-x"></i></button>
         </div>
     </div>
-
-
     <section class=" contactUs d-flex justify-content-center flex-wrap">
         <div class="container-fluid">
             <div class="row w-100 justify-content-start d-flex">
@@ -90,8 +91,9 @@
                     <div></div>
                 </div>
             </div>
-            <div class="row information-1 justify-content-center align-items-center">
-                <div class=" col-sm-5 col-12 d-flex map justify-content-center">
+            <div class="row information-1 justify-content-around align-items-center">
+               
+                <div class="col-6 col-sm-8 col-md-6 col-lg-5 p-0 m-0 d-flex map justify-content-center">
                     <div class="position-absolute loader lds-dual-ring"></div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.5416331302126!2d-114.05930158440493!3d46.57652897912982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535e9d7ef9f69d0d%3A0xcd730b6742b60b98!2s5191%20Eastside%20Hwy%2C%20Stevensville%2C%20MT%2059870%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sve!4v1651258181717!5m2!1ses-419!2sve"
@@ -99,41 +101,47 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="w-50 card text-center  col-sm-5 col-12 mt-sm-0 mt-5 ">
+                <div class="m-md-0 m-5 col-10 col-sm-8 col-md-6 col-lg-5 d-flex justify-content-center">
+                   <div class="card">
 
-                    <div class="card-body">
-                        <div class="card-header">
-                            GET IN TOUCH
-                        </div>
-
-                        <form class="form was-validate d-flex justify-content-center flex-wrap" method="post">
-
-
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-
-
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Enter your email">
-
-
-                           
-                            <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="3"></textarea>
-
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="action-btn">Submit</button>
-                            </div>
-
-                        </form>
-
-
+                   
+                    <div class="card-header text-center">
+                        Get in touch
                     </div>
-
-
-
+                    <div class="card-body pl-5 pr-5 d-flex flex-wrap justify-content-center align-items-center">  
+                        <form class="contact100-form validate-form">
+                           
+                            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                            <input class="rounded-pill input100" type="text" name="name" placeholder="Name">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                            <i class="bx bxs-user" aria-hidden="true"></i>
+                            </span>
+                            </div>
+                            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input class="rounded-pill input100" type="text" name="email" placeholder="Email">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                            <i class="bx bxs-envelope" aria-hidden="true"></i>
+                            </span>
+                            </div>
+                            <div class="wrap-input100 validate-input" data-validate="Message is required">
+                            <textarea class=" input100" name="message" placeholder="Message"></textarea>
+                            <span class="focus-input100"></span>
+                            </div>
+                            <div class="container-contact100-form-btn">
+                            <button class="action-btn">
+                            Send
+                            </button>
+                            </div>
+                        </form>
+                    </div>
+                     </div>
                 </div>
+
                 <div class="row pt-5 information-2 w-100 justify-content-center flex-wrap">
                     <div
-                        class="col-sm-6 col-12  d-flex justify-content-center flex-column flex-wrap align-items-center">
+                        class="col-sm-6 col-12 pb-3  d-flex justify-content-center flex-column flex-wrap align-items-center">
                         <div class="container-icon d-flex align-items-center"><i class="bx bxs-phone"></i>
                             <h3> Call now </h3>
                         </div>
@@ -142,7 +150,7 @@
                             1-844-WEGLAMP
                         </a>
                     </div>
-                    <div class="col-sm-6 col-12 d-flex justify-content-center flex-column flex-wrap align-items-center">
+                    <div class="col-sm-6 col-12 pt-3 d-flex justify-content-center flex-column flex-wrap align-items-center">
                         <div class="container-icon d-flex align-items-center"><i class="bx bxs-envelope"></i>
                             <h3> Email us </h3>
                         </div>
@@ -153,6 +161,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
     </section>
 
@@ -200,7 +209,7 @@
                         <ul>
                             <li><a href="./about_us.html">About Us</a></li>
                             <li><a href="./shop_by_category.html">Shop By Category</a></li>
-                            <li><a href="./our_services.html">Services</a></li>
+                            <li><a href="./services.html">Services</a></li>
                             <li><a href="./contact_us.html">Contac Us</a></li>
                         </ul>
                     </div>
@@ -223,7 +232,7 @@
         iframe.hide();
         iframe.on(`load`, function () {
             loader.remove();
-            iframe.show();
+            iframe.fadeIn();
         });
         
     </script>
@@ -231,5 +240,326 @@
 
 </html>
 <style>
-    
+    input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #aaaaaa; }
+input:-moz-placeholder { color: #aaaaaa; }
+input::-moz-placeholder { color: #aaaaaa; }
+input:-ms-input-placeholder { color: #aaaaaa; }
+
+textarea::-webkit-input-placeholder { color: #aaaaaa; }
+textarea:-moz-placeholder { color: #aaaaaa; }
+textarea::-moz-placeholder { color: #aaaaaa; }
+textarea:-ms-input-placeholder { color: #aaaaaa; }
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.bg-contact100 {
+  width: 100%;  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #ff990081;
+}
+
+.wrap-contact100 {
+  width: 1163px;
+  background: #fff;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 110px 130px 157px 148px;
+}
+
+/*------------------------------------------------------------------
+[  ]*/
+.contact100-pic {
+  width: 310px;
+  padding-top: 55px;
+}
+
+.contact100-pic img {
+  max-width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[  ]*/
+.contact100-form {
+  width: 390px;
+}
+
+.contact100-form-title {
+  display: block;
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  color: #ff99008f;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 36px;
+}
+
+input.input100 {
+  height: 50px;
+  padding: 0 30px 0 50px;
+}
+
+input.input100[name="email"] {
+  padding: 0 30px 0 54px;
+}
+
+textarea.input100 {
+  min-height: 150px;
+  padding: 14px 30px;
+  border-radius: 30px;
+}
+
+/*---------------------------------------------*/
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  font-family: "Allerta";
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #707070;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/*------------------------------------------------------------------
+[ Focus ]*/
+.focus-input100 {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: #ff990091;
+  
+}
+
+.input100:focus + .focus-input100 {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 60px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 60px 25px;
+    opacity: 0;
+  }
+}
+
+.symbol-input100 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  pointer-events: none;
+  color: #aaaaaa;
+  font-size: 15px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color: #FF9900;
+  padding-left: 22px;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.contact100-form-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #2E48BB;
+  font-family: "Allerta";
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+  background: #333333;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 13px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+  pointer-events: none;
+
+  font-family:"Allerta";
+  color: #c80000;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: "Allerta";
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 0.9rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 13px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 </style>
