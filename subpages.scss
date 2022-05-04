@@ -7,13 +7,13 @@
         min-height: 450px !important;
         height: 55vh;
         h1{
-    
+            padding: 0 10%;
             @include phonexs(){
                 font-size: 2.2rem;
             }
         }
     }
-
+    
     .hero-section {
         height: 60vh !important;
         min-height: 450px !important;
@@ -45,6 +45,15 @@
         padding-top: 100px;
     }  
 .contactUs{
+    @include tablets{
+        .get-in-touch{
+            order: 1;
+        }
+        .map{
+            order:2;
+        }
+    }
+        
         .ourHistory {
             background: linear-gradient(0deg, rgb(218, 218, 218), rgb(255, 255, 255));
         }

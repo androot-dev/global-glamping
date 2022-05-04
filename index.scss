@@ -511,6 +511,7 @@ li a {
         position: absolute;
         border-radius: 82px;
         z-index:3;
+        object-fit: cover;
         @include phones {
             width: 45%;
             height: 320px;
@@ -1176,6 +1177,8 @@ $height-card-sm: 260px;
             }
             .owl-item {
                 padding-top:50px;
+                padding-bottom: 0.4rem;
+                padding-left: 0.4rem;
                 @include flex(center);
                 opacity: 0;
                 @include tablets{
@@ -1199,6 +1202,7 @@ $height-card-sm: 260px;
         position: relative;
         font-size: 1.1rem;
         font-family: "Allerta";
+        
         @include flex(center);
         @include tablets {
             padding: 50px;
@@ -1214,7 +1218,7 @@ $height-card-sm: 260px;
         .photo {
             position: absolute;
             top: -3vw;
-            left: -13vw;
+            left: -12vw;
 
             @include tablets {
                 left: 0;
@@ -1223,7 +1227,11 @@ $height-card-sm: 260px;
             }
 
             @include phones {
-                top: -75px;
+                top: -70px;
+            }
+            @include phonexs{
+                font-size: 0.8rem;
+                top: -80px;
             }
         }
 
@@ -1238,10 +1246,14 @@ $height-card-sm: 260px;
             border-radius: 61px;
 
             @include tablets {
-                min-width: 100px;
-                min-height: 100px;
-                width: 100px;
-                height: 100px;
+                min-width: 90px;
+                min-height: 90px;
+                width: 90px;
+                height: 90px;
+            }
+            @include phonexs{
+                width: 18vw;
+                height: 18vw;
             }
 
         }
@@ -1268,10 +1280,12 @@ $height-card-sm: 260px;
                 min-width: 250px;
                 left: 30px;
                 padding-right: 15px;
-
+                min-width: 290px;
+                width: 30vw;
             }
             @include phonexs{
-                padding-right: 15px;
+                padding-right: 10px;
+                font-size: 0.8rem;
                 text-align: right;
                 min-width: 250px;
                 left: 0;

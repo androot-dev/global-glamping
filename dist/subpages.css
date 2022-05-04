@@ -22,6 +22,9 @@ strong {
   min-height: 450px !important;
   height: 55vh;
 }
+.hero h1 {
+  padding: 0 10%;
+}
 @media (max-width: 360px) {
   .hero h1 {
     font-size: 2.2rem;
@@ -58,6 +61,14 @@ strong {
   padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+  .contactUs .get-in-touch {
+    order: 1;
+  }
+  .contactUs .map {
+    order: 2;
+  }
+}
 .contactUs .ourHistory {
   background: linear-gradient(0deg, #dadada, white);
 }

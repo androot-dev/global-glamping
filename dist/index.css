@@ -1055,6 +1055,7 @@ li a:hover {
   position: absolute;
   border-radius: 82px;
   z-index: 3;
+  object-fit: cover;
 }
 @media (max-width: 576px) {
   .aboutUs .img-square, .services-container .img-square {
@@ -1697,6 +1698,8 @@ li a:hover {
 }
 .testimonials .testimonials-container .owl-carousel .owl-item {
   padding-top: 50px;
+  padding-bottom: 0.4rem;
+  padding-left: 0.4rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1745,7 +1748,7 @@ li a:hover {
 .testimonials .message .photo {
   position: absolute;
   top: -3vw;
-  left: -13vw;
+  left: -12vw;
 }
 @media (max-width: 768px) {
   .testimonials .message .photo {
@@ -1756,7 +1759,13 @@ li a:hover {
 }
 @media (max-width: 576px) {
   .testimonials .message .photo {
-    top: -75px;
+    top: -70px;
+  }
+}
+@media (max-width: 360px) {
+  .testimonials .message .photo {
+    font-size: 0.8rem;
+    top: -80px;
   }
 }
 .testimonials .message .photo img {
@@ -1770,10 +1779,16 @@ li a:hover {
 }
 @media (max-width: 768px) {
   .testimonials .message .photo img {
-    min-width: 100px;
-    min-height: 100px;
-    width: 100px;
-    height: 100px;
+    min-width: 90px;
+    min-height: 90px;
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 360px) {
+  .testimonials .message .photo img {
+    width: 18vw;
+    height: 18vw;
   }
 }
 .testimonials .message .name {
@@ -1801,11 +1816,14 @@ li a:hover {
     min-width: 250px;
     left: 30px;
     padding-right: 15px;
+    min-width: 290px;
+    width: 30vw;
   }
 }
 @media (max-width: 360px) {
   .testimonials .message .name {
-    padding-right: 15px;
+    padding-right: 10px;
+    font-size: 0.8rem;
     text-align: right;
     min-width: 250px;
     left: 0;
