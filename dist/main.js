@@ -14,11 +14,16 @@ $(document).ready(function() {
         let footerHeight = $('footer').outerHeight();
         var pixelesArriba = footerHeight + $(window).scrollTop();
         if (($(window).scrollTop() + $(window).height() + pixelesArriba ) >= $(document).height()) { // Si estamos al final de la página
+            
             $('.follow-btn').fadeOut();
         } else {
            $('.follow-btn').fadeIn();
         }
-      });
+    });
+
+
+
+
       $(`.closeMenu`).on("click", function () {
         $(".mysidebar").removeClass("openSide");
         });
