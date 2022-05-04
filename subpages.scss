@@ -1,5 +1,8 @@
     @import "_basic.scss";
     @import "variables.scss";
+    strong{
+        color: black;
+    }
     .hero {
         min-height: 450px !important;
         height: 55vh;
@@ -158,27 +161,88 @@
    
 }
 .services-container{
-    .list-services {
-        h1{
-            color: rgb(0, 0, 0);
-            @include subtitle();
-            padding: 10px 0;
-            font-family: "Rubik";
-          }
-          .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            border: none;
-            &:hover {
-              box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-            }
-            .text-muted i {
-              margin: 0 10px;
-            }
-          }
+    .background-section{
+  
+        .geodesic{
+            min-width: 200px !important;
+            width: 50vw !important;
+            transform: scaleX(-1);
+            left: 0 !important;
+            top: 50% !important;
+            opacity: 0.1 !important;
+        }
     }
-    
-    
+    p{
+      @include parrafo();
+      width: 100%;
+      text-align: left;
+   
+    }
+
+
+    .card {
+        border: none;
+        border-radius: 40px;
+        width: 35vw;
+        min-width: 250px;
+        max-width: 350px;
+        max-height: 450px;
+        margin: 20px 35px !important;
+        @include tablets{
+            max-height: none;
+        }
+        z-index: 6;
+        .text-muted i {
+          margin: 0 10px;
+        }
+        box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+        position: relative;
+        margin:20px;
+        height: 450px;
+        @include tablets{
+             height: auto;
+        }
+        .content-text-card{
+            height: 100%;
+            @include scrollbar("y", $primary, $secondary, 2px);
+          
+
+            @include tablets{
+                height: auto;
+                max-height: none;
+                overflow-y: hidden;
+                height: auto;
+            }
+        }
+        .card-body{
+            height: auto !important;
+        }
+        .step{
+            position: absolute;
+            top: -10px;
+            left:-5px;
+            font-size: 2rem;
+            width: 70px !important; 
+            height: 70px !important;
+            @include flex(center);
+            
+        }
+      
+        
+      }
+      h1{
+        color: rgb(0, 0, 0);
+        @include subtitle();
+        padding: 10px 0;
+        font-family: "Rubik";
+      }
+    img{
+        border-radius: 40px 40px 0 0;
+        box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25) , 0px 0px 0px 0px rgba(0, 0, 0, 0.25) , none , none;
+    }
+    h1{
+        color:white;
+    }
       
 }
 

@@ -92,12 +92,6 @@
   background-color: #223588;
 }
 
-.owl-item {
-  padding: 20px;
-  pointer-events: all !important;
-  min-width: 170px;
-}
-
 .title-section {
   background: #223588;
   font-family: "Rubik";
@@ -236,7 +230,7 @@
 .container-loader {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -244,7 +238,7 @@
   justify-content: center;
   background-color: #ecf0f1;
   z-index: 10000;
-  top: 0 !important;
+  top: 0;
   left: 0;
 }
 
@@ -269,7 +263,11 @@
   background: #223588 !important;
   position: fixed !important;
   top: 40px !important;
-  height: 45px !important;
+  height: 110px !important;
+}
+.nav-menu-fixed .logo-top {
+  width: 100px !important;
+  height: 100px !important;
 }
 
 .topheader-fixed {
@@ -459,7 +457,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: auto;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 body::-webkit-scrollbar {
   width: 5px !important;
@@ -505,7 +503,6 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
-  padding-left: 40px;
 }
 @media (max-width: 576px) {
   .hero h1 {
@@ -877,13 +874,13 @@ li a:hover {
   height: 100%;
 }
 
-.aboutUs {
+.aboutUs, .services-container {
   height: auto !important;
   width: 100%;
   background: linear-gradient(0deg, white 0%, #ececec 16%, #dfdfdf 34%, #dbdbdb 51%, #e2e2e2 70%, #ececec 92%, white 100%);
   background: linear-gradient(0deg, white 0%, #ececec 16%, #dfdfdf 34%, #dbdbdb 51%, #e2e2e2 67%, #ececec 84%, white 100%);
 }
-.aboutUs .text-about {
+.aboutUs .text-about, .services-container .text-about {
   z-index: 5;
   font-family: "Allerta";
   font-style: normal;
@@ -892,12 +889,12 @@ li a:hover {
   color: #6d6868;
 }
 @media (max-width: 576px) {
-  .aboutUs .text-about {
+  .aboutUs .text-about, .services-container .text-about {
     font-size: 16px;
     text-align: center;
   }
 }
-.aboutUs .overlay {
+.aboutUs .overlay, .services-container .overlay {
   width: 100%;
   height: 100%;
   z-index: 5;
@@ -905,7 +902,7 @@ li a:hover {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(164, 164, 164, 0.691458) 53.44%, #FFFFFF 91.46%);
   pointer-events: none;
 }
-.aboutUs .geodesic {
+.aboutUs .geodesic, .services-container .geodesic {
   z-index: 5;
   pointer-events: none;
   opacity: 0.08;
@@ -919,9 +916,9 @@ li a:hover {
   max-height: 550px;
   background-size: contain;
   background-position: right;
-  right: 0px !important;
+  right: 0px;
 }
-.aboutUs .geodesic-overlay {
+.aboutUs .geodesic-overlay, .services-container .geodesic-overlay {
   position: absolute;
   background-color: transparent;
   right: 0;
@@ -931,7 +928,7 @@ li a:hover {
   pointer-events: none;
   z-index: 6;
 }
-.aboutUs p {
+.aboutUs p, .services-container p {
   font-family: "Allerta";
   font-style: normal;
   font-weight: 400;
@@ -942,30 +939,30 @@ li a:hover {
   padding-left: 5%;
 }
 @media (max-width: 576px) {
-  .aboutUs p {
+  .aboutUs p, .services-container p {
     font-size: 16px;
     text-align: center;
   }
 }
 @media (max-width: 576px) {
-  .aboutUs p {
+  .aboutUs p, .services-container p {
     padding-right: 0;
     padding-left: 0;
   }
 }
-.aboutUs .button-read {
+.aboutUs .button-read, .services-container .button-read {
   z-index: 5;
   padding-right: 25%;
 }
-.aboutUs .button-read * {
+.aboutUs .button-read *, .services-container .button-read * {
   z-index: 5;
 }
 @media (max-width: 576px) {
-  .aboutUs .button-read {
+  .aboutUs .button-read, .services-container .button-read {
     padding-right: 0;
   }
 }
-.aboutUs .square-1 {
+.aboutUs .square-1, .services-container .square-1 {
   position: relative;
   width: 60%;
   height: 30vw;
@@ -985,13 +982,13 @@ li a:hover {
   justify-content: flex-start;
 }
 @media (max-width: 576px) {
-  .aboutUs .square-1 {
+  .aboutUs .square-1, .services-container .square-1 {
     width: 50%;
     height: 100%;
   }
 }
 @media (max-width: 576px) {
-  .aboutUs .square-1 {
+  .aboutUs .square-1, .services-container .square-1 {
     width: 65vw;
     height: 60vw;
     min-width: 250px;
@@ -1000,11 +997,11 @@ li a:hover {
   }
 }
 @media (max-width: 768px) {
-  .aboutUs .square-1 {
+  .aboutUs .square-1, .services-container .square-1 {
     margin-bottom: 80px;
   }
 }
-.aboutUs .square-2 {
+.aboutUs .square-2, .services-container .square-2 {
   width: 85%;
   height: 85%;
   background: #293FA1;
@@ -1018,7 +1015,7 @@ li a:hover {
   position: relative;
   z-index: 3;
 }
-.aboutUs .square-3 {
+.aboutUs .square-3, .services-container .square-3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1032,7 +1029,7 @@ li a:hover {
   border-radius: 0 82px 82px 0;
   z-index: 3;
 }
-.aboutUs .square-3 h1 {
+.aboutUs .square-3 h1, .services-container .square-3 h1 {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   height: 100%;
@@ -1045,11 +1042,11 @@ li a:hover {
   margin-left: 10%;
 }
 @media (max-width: 576px) {
-  .aboutUs .square-3 h1 {
+  .aboutUs .square-3 h1, .services-container .square-3 h1 {
     font-size: 2.7rem;
   }
 }
-.aboutUs .img-square {
+.aboutUs .img-square, .services-container .img-square {
   width: 80%;
   min-width: 295px;
   max-height: 400px !important;
@@ -1060,7 +1057,7 @@ li a:hover {
   z-index: 3;
 }
 @media (max-width: 576px) {
-  .aboutUs .img-square {
+  .aboutUs .img-square, .services-container .img-square {
     width: 45%;
     height: 320px;
     min-width: 235px;
@@ -1070,7 +1067,7 @@ li a:hover {
   }
 }
 @media (max-width: 405px) {
-  .aboutUs .img-square {
+  .aboutUs .img-square, .services-container .img-square {
     min-width: 205px;
     min-height: 240px;
     right: -30%;
@@ -1160,6 +1157,16 @@ li a:hover {
   text-decoration: none;
 }
 
+.step {
+  font-size: 1.4rem;
+  font-family: "Rubik";
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #223588;
+  color: white;
+}
+
 .ourServices .title-section {
   width: 100%;
 }
@@ -1209,15 +1216,6 @@ li a:hover {
   background: #FFFFFF;
   border-radius: 61px;
   box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.ourServices .owl-carousel .container-item .service-description .step {
-  font-size: 1.4rem;
-  font-family: "Rubik";
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background: #223588;
-  color: white;
 }
 @media (max-width: 365px) {
   .ourServices .owl-carousel .container-item .service-description {
@@ -1463,7 +1461,6 @@ li a:hover {
   height: auto;
 }
 .partners .owl-stage, .partners .owl-stage-outer {
-  width: 100%;
   max-height: 150px !important;
 }
 .partners .overlay {
@@ -1479,6 +1476,26 @@ li a:hover {
 }
 .partners .logos .owl-item {
   transition: transform 0.2s linear;
+  width: 230px;
+}
+@media screen and (max-width: 450px) {
+  .partners .logos .owl-item {
+    width: 100vw !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .partners .logos .owl-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .partners .logos .owl-item:hover {
   transform: scale(1.1);
@@ -1739,7 +1756,7 @@ li a:hover {
 }
 @media (max-width: 576px) {
   .testimonials .message .photo {
-    top: -70px;
+    top: -75px;
   }
 }
 .testimonials .message .photo img {
@@ -1775,14 +1792,15 @@ li a:hover {
 @media (max-width: 768px) {
   .testimonials .message .name {
     top: -50px;
-    left: 100px;
+    left: 105px;
   }
 }
 @media (max-width: 576px) {
   .testimonials .message .name {
     text-align: right;
     min-width: 250px;
-    left: 10px;
+    left: 30px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 360px) {

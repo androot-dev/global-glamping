@@ -68,11 +68,7 @@
     }
     
 }
-.owl-item{
-    padding: 20px;
-    pointer-events: all !important;
-    min-width: 170px;
- }
+
 .title-section{
         background: $primary;
         font-family: "Rubik";
@@ -194,11 +190,11 @@
 .container-loader{
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   @include flex(center);
   background-color: #ecf0f1;
   z-index:10000;
-  top: 0 !important;
+  top: 0 ;
   left: 0;
 }
 .logo-top{
@@ -219,9 +215,11 @@
     background: $primary !important;
     position: fixed !important;
     top:40px !important;
-
-    height: 45px !important;
-
+    height: 110px !important;
+    .logo-top{
+        width: 100px !important;
+        height: 100px !important;
+    }
 }
 .topheader-fixed{
     background-color: #e7e7e7 !important;

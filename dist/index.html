@@ -284,7 +284,7 @@
                         <div class="owl-carousel">
                             <div class="container-item">
                                 <div class="service-photo">
-                                    <img src="assets/services/cleaning.png" alt="">
+                                    <img src="assets/services/cleaning.webp" alt="">
                                 </div>
                                 <div class="service-description">
                                     <div class="step"> 1 </div>
@@ -588,22 +588,26 @@
                 autoplay: true,
             });
             $(".partners .owl-carousel").owlCarousel({
-                items: 5,
                 loop: true,
                 dots: false,
                 center: true,
-                responseve: {
-                    400: {
+                responsive: {
+                    0: {
                         items: 1
                     },
-                    576: {
-                        items: 2
+                    449: {
+                        items: 2,
                     },
-                    768: {
-                        items: 4
+                    576: {
+                        items: 3
+                    },
+        
+                    992:{
+                        items: 5
                     }
-                },
+                }
             });
+            
             $(`.ourServices .owl-carousel`).on('translated.owl.carousel', function (event) {
                 let index = $(this).find(`.active .step`).text();
                 dotsActive(`.ourServices .nav-dots .circle`, event, parseInt(index) + 1);
@@ -677,15 +681,19 @@
             }
         
         });
-
-
-
-
-
-
-
-
     </script>
 </body>
 
 </html>
+<style>
+    .hero h1{
+        padding-left: 40px;
+    }
+    @media screen and (max-width: 576px) {
+        .hero h1{
+            padding-left: 0px;
+            padding-right: 0;
+        }
+    }
+        
+</style>
