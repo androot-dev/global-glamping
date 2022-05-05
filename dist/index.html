@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="favicon.ico">
+    <!--[if lt E9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body class="position-relative">
 
-
+        <!--HEADER-->
         <header class=" overlay overlay-to-white d-flex align-items-center justify-content-start">
             <!--topheader-->
             <div class=" topheader vw-100 d-flex justify-content-center align-items-center">
@@ -44,7 +50,7 @@
     
         </header>
      
-        <!--hero-content-->
+        <!--HERO-->
         <section class="position-relative p-0 m-0 hero-section">
             <div class="container-fluid p-0 m-0">
                 <div class="background-section ro p-0 m-0">
@@ -66,27 +72,8 @@
                 </div>
             </div>
         </section>
-
-        <div class="container-loader">
-            <div class="position-absolute loader lds-dual-ring"></div>
-        </div>
-        <!-- SIDEBAR -->
-        <div class="mysidebar">
-            <div class="w-100 mt-4 d-flex justify-content-center">
-                <img src="assets/LOGO.png" class="logo-sidebar" style="width:70px; height:70px;" />
-            </div>
-            <ul>
-                <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
-                <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
-                <li><a href="./services.html">Services</a><i class='bx bx-world'></i></li>
-                <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
-                <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
-            </ul>
-            <div class="d-flex justify-content-center container-closeMenu">
-                <button class="closeMenu bg-danger text-white"><i class="bx bx-x"></i></button>
-            </div>
-        </div>
-    
+      
+        <!--BEST-SELLERS-->
         <section class="best-sellers">
             <div class="container-fluid">
                 <div class="row ">
@@ -181,6 +168,7 @@
             </div>
         </section>
     
+        <!--ABOUT US-->
         <section class="aboutUs position-relative">
             <div class="background-section ">
                 <div class="geodesic">
@@ -248,6 +236,7 @@
             </div>
         </section>
     
+        <!--OURS ERVICES-->
         <section class="ourServices overlay overlay-to-white">
             <div class="overlay container-fluid">
     
@@ -364,6 +353,7 @@
     
         </section>
     
+        <!--PARTNERS-->
         <section class="partners w-100 d-flex justify-content-end flex-wrap alig-items-center">
             <div class="container-fluid">
                 <div class="row justify-content-end">
@@ -394,7 +384,8 @@
                 </div>
             </div>
         </section>
-    
+
+        <!--TESTIMONALS-->
         <section class="testimonials position-relative ">
             <div class="container-fluid">
     
@@ -459,24 +450,32 @@
     
     
                 </div>
-                <div class="row position-relative d-flex justify-content-center alig-items-center flex-wrap">
-                    <div class="msj rounded-pill p-3 justify-content-center d-flex align-items-center">
-                        <span>Subscribe to receive GG's 2022 Glamping Forecast</span>
-                    </div>
-                    <form class="d-sm-flex d-block flex-wrap  align-items-center subscribe-form" role="form">
-                        <input class="rounded-pill p-3" type="email" name="email">
-                        <button class="action-btn p-3" type="submit">Suscribe!</button>
-                    </form>
-    
-                    <div class=" subscribe-container position-absolute">
-                        <div class="overlay"></div>
-                    </div>
-    
-                </div>
+                
             </div>
     
         </section>
+
+        <!-- SUBSCRIBE SECTION -->
+        <section class="subscribe-section">
+            <div class="row subscribe-row position-relative d-flex justify-content-center alig-items-center flex-wrap">
+                <div class="msj rounded-pill p-3 justify-content-center d-flex align-items-center">
+                    <span>Subscribe to receive GG's 2022 Glamping Forecast</span>
+                </div>
+                <form class="d-sm-flex d-block flex-wrap  align-items-center subscribe-form" role="form">
+                    <input class="rounded-pill p-3" type="email" name="email">
+                    <button class="action-btn p-3" type="submit">Suscribe!</button>
+                </form>
     
+                <div class=" subscribe-container position-absolute">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class=" subscribe-container position-absolute">
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+        <!--FOOTER-->
         <footer class="vw-100 h-auto d-flex justify-content-end align-items-center flex-wrap">
             <div class="mt-5 container-fluid vw-100 d-flex justify-content-center align-items-center">
                 <div class="row row-footer justify-content-around d-flex">
@@ -535,6 +534,26 @@
             </div>
         </footer>
 
+        <!--LOADER -->
+        <div class="container-loader">
+                <div class="position-absolute loader lds-dual-ring"></div>
+        </div>
+        <!-- SIDEBAR -->
+        <div class="mysidebar">
+                <div class="w-100 mt-4 d-flex justify-content-center">
+                    <img src="assets/LOGO.png" class="logo-sidebar" style="width:70px; height:70px;" />
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
+                    <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
+                    <li><a href="./services.html">Services</a><i class='bx bx-world'></i></li>
+                    <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
+                    <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
+                </ul>
+                <div class="d-flex justify-content-center container-closeMenu">
+                    <button class="closeMenu bg-danger text-white"><i class="bx bx-x"></i></button>
+                </div>
+        </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

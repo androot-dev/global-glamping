@@ -1037,6 +1037,68 @@ $height-card-sm: 260px;
         margin-left: 0 !important;
     }
 }
+
+.subscribe-row{
+
+
+    .subscribe-form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        input{
+            border: none;
+            box-sizing: border-box;
+            box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 75%;
+            margin: 20px 0;
+            margin-right: 5% !important;
+        }
+        button {
+            width: 20% !important;
+            font-size: 1rem;
+        }
+        input, button{
+            height: 50px;
+            @include phones{
+                width: 100% !important;
+                max-width: none !important;
+            }
+        }      
+    }
+    .msj {
+        background: $primary;
+        font-family: "Rubik";
+        font-size: 1rem;
+
+        span {
+            text-align: center;
+            font-size: 1em;
+            height: 100%;
+        }
+
+        color: white;
+        width: 80%;
+
+    }
+    .subscribe-container {
+        top: 0;
+        background: url("assets/SUBSCRIBE.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        z-index: -1;
+        .overlay {
+            background: linear-gradient(0deg, rgba(224, 224, 223, 1) 0%, rgba(233, 233, 233, 0.8939950980392157) 44%, rgba(246, 246, 246, 0.896796218487395) 69%, rgba(255, 255, 255, 1) 100%);
+            pointer-events: none;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 500px;
+            top: 0;
+        }
+    }
+}
 .testimonials {
     height: auto;
     .geodesic {
@@ -1061,35 +1123,6 @@ $height-card-sm: 260px;
             pointer-events: none;
         }
     }
-    .overlay {
-        background: linear-gradient(0deg, rgba(224, 224, 223, 1) 0%, rgba(233, 233, 233, 0.8939950980392157) 44%, rgba(246, 246, 246, 0.896796218487395) 69%, rgba(255, 255, 255, 1) 100%);
-        pointer-events: none;
-        z-index: 1;
-        position: absolute;
-        width: 100%;
-        height: 500px;
-        top: 0;
-    }
-    .subscribe-form {
-        input, button{
-            height: 50px;
-            @include phones{
-                width: 100% !important;
-                max-width: none !important;
-            }
-        }      
-    }
-    .subscribe-container {
-        top: 0;
-        background: url("assets/SUBSCRIBE.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        width: 100%;
-        z-index: -1;
-
-    }
-
     .nr {
         font-family: "Rubik";
         color: $primary;
@@ -1127,47 +1160,10 @@ $height-card-sm: 260px;
 
     }
 
-    .msj {
-        background: $primary;
-        font-family: "Rubik";
-        font-size: 1rem;
-
-        span {
-            text-align: center;
-            font-size: 1em;
-            height: 100%;
-        }
-
-        color: white;
-        width: 80%;
-
-    }
-
-    form {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
-
-        input {
-            border: none;
-            box-sizing: border-box;
-            box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
-            width: 75%;
-            margin: 20px 0;
-            margin-right: 5% !important;
-        }
-
-        button {
-            width: 20% !important;
-            font-size: 1rem;
-        }
-
-    }
 
     .testimonials-container {
         height: auto;
-        padding-bottom: 100px;
-       
+     
         @include desktops{
             padding-left: -17%;
         }
@@ -1444,7 +1440,7 @@ footer {
     }
 }
 
-.aboutUs, .contacUs, .testimonials {
+.aboutUs, .contacUs, .testimonials, .subscribe-section {
     padding-top: $section-separation;
     
 }
