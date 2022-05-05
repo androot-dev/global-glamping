@@ -624,10 +624,11 @@ header {
   }
 }
 .best-sellers .best-sellers-carousel-2 {
-  pointer-events: none;
   max-height: 300px !important;
 }
 .best-sellers .best-sellers-carousel-2 .owl-item {
+  padding-top: 20px;
+  padding-left: 20px;
   min-height: 300px;
 }
 @media (max-width: 576px) {
@@ -795,6 +796,7 @@ header {
   visibility: hidden;
   box-shadow: 0px 5px 8px -5px black;
   transition: transform 0.2s ease-in-out;
+  z-index: 100;
 }
 .best-sellers .btn-car:hover {
   transform: scale(1.2);
@@ -874,13 +876,12 @@ li a:hover {
   height: 100%;
 }
 
-.aboutUs, .services-container {
+.aboutUs, .services-container, .shop-by-category {
   height: auto !important;
   width: 100%;
-  background: linear-gradient(0deg, white 0%, #ececec 16%, #dfdfdf 34%, #dbdbdb 51%, #e2e2e2 70%, #ececec 92%, white 100%);
   background: linear-gradient(0deg, white 0%, #ececec 16%, #dfdfdf 34%, #dbdbdb 51%, #e2e2e2 67%, #ececec 84%, white 100%);
 }
-.aboutUs .text-about, .services-container .text-about {
+.aboutUs .text-about, .services-container .text-about, .shop-by-category .text-about {
   z-index: 5;
   font-family: "Allerta";
   font-style: normal;
@@ -889,12 +890,12 @@ li a:hover {
   color: #6d6868;
 }
 @media (max-width: 576px) {
-  .aboutUs .text-about, .services-container .text-about {
+  .aboutUs .text-about, .services-container .text-about, .shop-by-category .text-about {
     font-size: 16px;
     text-align: center;
   }
 }
-.aboutUs .overlay, .services-container .overlay {
+.aboutUs .overlay, .services-container .overlay, .shop-by-category .overlay {
   width: 100%;
   height: 100%;
   z-index: 5;
@@ -902,7 +903,7 @@ li a:hover {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(164, 164, 164, 0.691458) 53.44%, #FFFFFF 91.46%);
   pointer-events: none;
 }
-.aboutUs .geodesic, .services-container .geodesic {
+.aboutUs .geodesic, .services-container .geodesic, .shop-by-category .geodesic {
   z-index: 5;
   pointer-events: none;
   opacity: 0.08;
@@ -918,7 +919,7 @@ li a:hover {
   background-position: right;
   right: 0px;
 }
-.aboutUs .geodesic-overlay, .services-container .geodesic-overlay {
+.aboutUs .geodesic-overlay, .services-container .geodesic-overlay, .shop-by-category .geodesic-overlay {
   position: absolute;
   background-color: transparent;
   right: 0;
@@ -928,7 +929,7 @@ li a:hover {
   pointer-events: none;
   z-index: 6;
 }
-.aboutUs p, .services-container p {
+.aboutUs p, .services-container p, .shop-by-category p {
   font-family: "Allerta";
   font-style: normal;
   font-weight: 400;
@@ -939,30 +940,30 @@ li a:hover {
   padding-left: 5%;
 }
 @media (max-width: 576px) {
-  .aboutUs p, .services-container p {
+  .aboutUs p, .services-container p, .shop-by-category p {
     font-size: 16px;
     text-align: center;
   }
 }
 @media (max-width: 576px) {
-  .aboutUs p, .services-container p {
+  .aboutUs p, .services-container p, .shop-by-category p {
     padding-right: 0;
     padding-left: 0;
   }
 }
-.aboutUs .button-read, .services-container .button-read {
+.aboutUs .button-read, .services-container .button-read, .shop-by-category .button-read {
   z-index: 5;
   padding-right: 25%;
 }
-.aboutUs .button-read *, .services-container .button-read * {
+.aboutUs .button-read *, .services-container .button-read *, .shop-by-category .button-read * {
   z-index: 5;
 }
 @media (max-width: 576px) {
-  .aboutUs .button-read, .services-container .button-read {
+  .aboutUs .button-read, .services-container .button-read, .shop-by-category .button-read {
     padding-right: 0;
   }
 }
-.aboutUs .square-1, .services-container .square-1 {
+.aboutUs .square-1, .services-container .square-1, .shop-by-category .square-1 {
   position: relative;
   width: 60%;
   height: 30vw;
@@ -982,13 +983,13 @@ li a:hover {
   justify-content: flex-start;
 }
 @media (max-width: 576px) {
-  .aboutUs .square-1, .services-container .square-1 {
+  .aboutUs .square-1, .services-container .square-1, .shop-by-category .square-1 {
     width: 50%;
     height: 100%;
   }
 }
 @media (max-width: 576px) {
-  .aboutUs .square-1, .services-container .square-1 {
+  .aboutUs .square-1, .services-container .square-1, .shop-by-category .square-1 {
     width: 65vw;
     height: 60vw;
     min-width: 250px;
@@ -997,11 +998,11 @@ li a:hover {
   }
 }
 @media (max-width: 768px) {
-  .aboutUs .square-1, .services-container .square-1 {
+  .aboutUs .square-1, .services-container .square-1, .shop-by-category .square-1 {
     margin-bottom: 80px;
   }
 }
-.aboutUs .square-2, .services-container .square-2 {
+.aboutUs .square-2, .services-container .square-2, .shop-by-category .square-2 {
   width: 85%;
   height: 85%;
   background: #293FA1;
@@ -1015,7 +1016,7 @@ li a:hover {
   position: relative;
   z-index: 3;
 }
-.aboutUs .square-3, .services-container .square-3 {
+.aboutUs .square-3, .services-container .square-3, .shop-by-category .square-3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1029,7 +1030,7 @@ li a:hover {
   border-radius: 0 82px 82px 0;
   z-index: 3;
 }
-.aboutUs .square-3 h1, .services-container .square-3 h1 {
+.aboutUs .square-3 h1, .services-container .square-3 h1, .shop-by-category .square-3 h1 {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   height: 100%;
@@ -1042,11 +1043,11 @@ li a:hover {
   margin-left: 10%;
 }
 @media (max-width: 576px) {
-  .aboutUs .square-3 h1, .services-container .square-3 h1 {
+  .aboutUs .square-3 h1, .services-container .square-3 h1, .shop-by-category .square-3 h1 {
     font-size: 2.7rem;
   }
 }
-.aboutUs .img-square, .services-container .img-square {
+.aboutUs .img-square, .services-container .img-square, .shop-by-category .img-square {
   width: 80%;
   min-width: 295px;
   max-height: 400px !important;
@@ -1058,7 +1059,7 @@ li a:hover {
   object-fit: cover;
 }
 @media (max-width: 576px) {
-  .aboutUs .img-square, .services-container .img-square {
+  .aboutUs .img-square, .services-container .img-square, .shop-by-category .img-square {
     width: 45%;
     height: 320px;
     min-width: 235px;
@@ -1068,7 +1069,7 @@ li a:hover {
   }
 }
 @media (max-width: 405px) {
-  .aboutUs .img-square, .services-container .img-square {
+  .aboutUs .img-square, .services-container .img-square, .shop-by-category .img-square {
     min-width: 205px;
     min-height: 240px;
     right: -30%;
@@ -1363,7 +1364,7 @@ li a:hover {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  padding-bottom: 95px !important;
+  padding-bottom: 120px !important;
 }
 .ourServices .owl-carousel .active {
   padding-left: 1% !important;
@@ -1481,7 +1482,6 @@ li a:hover {
 }
 @media screen and (max-width: 450px) {
   .partners .logos .owl-item {
-    width: 100vw !important;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1524,11 +1524,12 @@ li a:hover {
 .partners .icon-3 {
   width: 226px;
   height: 188px;
-  min-width: 226px;
-  min-height: 188px;
-  padding-bottom: 20px;
+  min-width: 206px;
+  min-height: 168px;
 }
 .partners .icon-3 img {
+  max-width: 176px;
+  max-height: 148px;
   width: 100%;
   height: 100%;
 }
@@ -1748,7 +1749,7 @@ li a:hover {
 .testimonials .message .photo {
   position: absolute;
   top: -3vw;
-  left: -12vw;
+  left: -13vw;
 }
 @media (max-width: 768px) {
   .testimonials .message .photo {
@@ -1765,7 +1766,7 @@ li a:hover {
 @media (max-width: 360px) {
   .testimonials .message .photo {
     font-size: 0.8rem;
-    top: -80px;
+    top: -70px;
   }
 }
 .testimonials .message .photo img {
@@ -1900,12 +1901,17 @@ footer h2 {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 15px;
 }
 @media (max-width: 576px) {
   footer h2 {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  footer h2 {
+    justify-content: center;
   }
 }
 footer .more {

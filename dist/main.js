@@ -11,15 +11,25 @@ $(document).ready(function() {
             $(".nav-menu").removeClass("nav-menu-fixed");
             $(".topheader").removeClass("topheader-fixed");
         }
-        let footerHeight = $('footer').outerHeight();
-        var pixelesArriba = footerHeight + $(window).scrollTop();
-        if (($(window).scrollTop() + $(window).height() + pixelesArriba ) >= $(document).height()) { // Si estamos al final de la página
-            
-            $('.follow-btn').fadeOut();
-        } else {
-           $('.follow-btn').fadeIn();
-        }
+            let footerHeight = $('footer').outerHeight();
+            var pixelesArriba = footerHeight;
+            if (($(window).scrollTop() + $(window).height() + pixelesArriba ) >= $(document).height()) { // Si estamos al final de la página
+                
+                $('.follow-btn').stop(true).animate({ // Escondemos el elemento
+                    opacity: 0
+                }, 200, function(){
+                    $(this).css('display', 'none'); // Lo ocultamos
+                });
+            } else {
+
+                $('.follow-btn').stop(true).animate({ // Mostramos el elemento
+                    opacity: 1
+                }, 200, function(){
+                    $(this).css('display', 'block'); // Lo mostramos
+                });
+            }
     });
+
 
 
 
@@ -41,7 +51,7 @@ $(document).ready(function() {
                 top: scroll
             })
             loader.css({
-                top: "calc("+scroll+"px"+" + 50vh)"
+                top: "calc("+scroll+"px"+" + " + "50vh - " + "50px" + ")"
             })
         }
 

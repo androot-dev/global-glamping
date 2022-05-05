@@ -58,7 +58,7 @@
                         <h1 class="w-100">GLOBAL GLAMPING</h1>
                         <h2 class="w-75">Explore your world</h2>
                         <div class="w-100 justify-content-sm-start justify-content-center d-flex get-now-btn">
-                            <a href="./products.html" class="action-btn">
+                            <a href="./shop_by_category.html" class="action-btn">
                                 GET NOW
                             </a>
                         </div>
@@ -79,7 +79,6 @@
                 <li><a href="./index.html">Home</a><i class="bx bx-home"></i></li>
                 <li><a href="./about_us.html"> About Us</a><i class='bx bxs-info-circle'></i></li>
                 <li><a href="./services.html">Services</a><i class='bx bx-world'></i></li>
-                <li><a href="./products.html">Products</a><i class='bx bx-package'></i></li>
                 <li><a href="./shop_by_category.html">Shop by Category</a><i class='bx bx-store-alt'></i></li>
                 <li><a href="./contact_us.html">Contact Us</a><i class="bx bx-phone"></i></li>
             </ul>
@@ -563,7 +562,7 @@
                 center: true,
                 responsiveClass: true,
                 onInitialized: () => $(`.best-sellers-carousel-2 .owl-item:nth-child(3)`).addClass('selectedCard'),
-                margin: 40,
+                margin: 200,
                 items: 3,
                 dots: false,
                 responsive: {
@@ -591,17 +590,16 @@
                 loop: true,
                 dots: false,
                 center: true,
+                autoWeight: true,
+                margin:100,
                 responsive: {
                     0: {
-                        items: 1
-                    },
-                    449: {
                         items: 2,
                     },
                     576: {
-                        items: 3
+                        items: 3,
+                        nav: false,
                     },
-        
                     992:{
                         items: 5
                     }
