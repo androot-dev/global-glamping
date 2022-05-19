@@ -1,9 +1,8 @@
 
 $(document).ready(function() {
+   
     $(window).on('scroll', function () {
-
         let scroll = $(window).scrollTop();
-        
         if (scroll > 50) {
             $(".nav-menu").addClass("nav-menu-fixed");
             $(".topheader").addClass("topheader-fixed");
@@ -29,11 +28,6 @@ $(document).ready(function() {
                 });
             }
     });
-
-
-
-
-
       $(`.closeMenu`).on("click", function () {
         $(".mysidebar").removeClass("openSide");
         });
@@ -54,10 +48,7 @@ $(document).ready(function() {
                 top: "calc("+scroll+"px"+" + " + "50vh - " + "50px" + ")"
             })
         }
-
-
-
-        $(window).on(`load`, function() {
+        $(window).on(`pageshow`, function() {
             if(loader){
                 containerLoader.fadeIn(1000, function() {
                     containerLoader.remove();

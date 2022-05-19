@@ -354,6 +354,7 @@ strong {
   max-width: 600px !important;
   border-radius: 61px;
   box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 @media (max-width: 576px) {
   .ourHistory .container-img-carousel {
